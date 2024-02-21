@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.user.token.post.users-token-post</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-02-20 10:05:40 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Generate JWT Token</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/user/token/post/users-token-post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">JWT Token Feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Generate JWT Token</span>
+                <span>*configure logPrettyResponse = true *configure ssl = true
+  *header Authorization = &#39;Bearer &#39; + res.jwtToken</span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>111</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref failed">8</div>
+      
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>url demoBaseUrl And path &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token&#39; And request { username: &#39;default&#39; , password: &#39;default&#39;, validity: &#39;1&#39;} When method post Then status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">111</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">22:05:40.353 src/test/java/user/token/post/users-token-post.feature:8
+Given url demoBaseUrl And path &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token&#39; And request { username: &#39;default&#39; , password: &#39;default&#39;, validity: &#39;1&#39;} When method post Then status 200
+js failed:
+&gt;&gt;&gt;&gt;
+01: demoBaseUrl And path &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token&#39; And request { username: &#39;default&#39; , password: &#39;default&#39;, validity: &#39;1&#39;} When method post Then status 200
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:12 Expected ; but found And
+demoBaseUrl And path &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token&#39; And request { username: &#39;default&#39; , password: &#39;default&#39;, validity: &#39;1&#39;} When method post Then status 200
+            ^
+Unnamed:1:154 Expected ; but found method
+demoBaseUrl And path &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token&#39; And request { username: &#39;default&#39; , password: &#39;default&#39;, validity: &#39;1&#39;} When method post Then status 200
+                                                                                                                                                          ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:401)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:141)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:137)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1340)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2369)
+- com.intuit.karate.core.ScenarioEngine.evalKarateExpression(ScenarioEngine.java:2288)
+- com.intuit.karate.core.ScenarioEngine.url(ScenarioEngine.java:361)
+
+src/test/java/user/token/post/users-token-post.feature:8
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref skipped">10</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>def res = response Then print &#39;The value of response is:&#39;, res.jwtToken</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url demoBaseUrl2 And path &#39;federated-search/1/parent-child-query&#39; And request { query: &#39;{&quot;type&quot;:&quot;AND&quot;,&quot;constraints&quot;:[{&quot;type&quot;:&quot;OR&quot;,&quot;constraints&quot;:[{&quot;type&quot;:&quot;FIELD_COMPARISON&quot;,&quot;field&quot;:&quot;SUBJECT&quot;,&quot;value&quot;:&quot;test&quot;,&quot;operator&quot;:&quot;MATCHES&quot;},{&quot;type&quot;:&quot;FIELD_COMPARISON&quot;,&quot;field&quot;:&quot;MESSAGE_CONTENT&quot;,&quot;value&quot;:&quot;test&quot;,&quot;operator&quot;:&quot;MATCHES&quot;}]},{&quot;type&quot;:&quot;FIELD_COMPARISON&quot;,&quot;field&quot;:&quot;BODY_CONTENT&quot;,&quot;value&quot;:&quot;software&quot;,&quot;operator&quot;:&quot;MATCHES&quot;}]}&#39;,messageType: &#39;=Email=&#39;} #And headers { Content-Type: &#39;application/json&#39;, Authorization: &#39;[res.jwtToken]&#39;} And header Authorization = res.jwtToken When method post Then status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
