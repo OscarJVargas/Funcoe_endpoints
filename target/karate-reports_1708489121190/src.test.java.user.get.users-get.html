@@ -36,13 +36,13 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-02-21 12:24:47 a. m.</div>
+    <div>2024-02-20 10:58:42 p. m.</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item failed">
-            <a href="#[1:8]"><span>[1:8]</span> <span>Get a user</span></a>
+            <a href="#[1:9]"><span>[1:9]</span> <span>Get a user</span></a>
           </div>
         </div>
       </div>
@@ -55,22 +55,22 @@
           <span class="feature-name">Get user on request</span>
           <span class="feature-description">Background
     * call read(&quot;../token/users-token-post.feature@token&quot;)
-    * header Authorization = Bearer + token</span>
+    * header Authorization = Bearer + &#39;token&#39;</span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:8]">
+          <div class="scenario-heading" id="[1:9]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:8]</span>
+                Scenario: <span>[1:9]</span>
                 <span class="scenario-name">Get a user</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1853</span>
+              <span>ms:</span>&nbsp;<span>3151</span>
             </div>
           </div>
           
@@ -80,14 +80,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all&quot;</span>
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">115</div>
+    <div class="time-cell passed">488</div>
   </div>
 
    
@@ -108,14 +108,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1735</div>
+    <div class="time-cell passed">2652</div>
   </div>
 
    
@@ -124,22 +124,23 @@
 
   
 
-  <div class="preformatted" data-parent="0.10">00:24:46.044 request:
-1 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all
+  <div class="preformatted" data-parent="0.11">22:58:40.515 request:
+1 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/
 1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-00:24:47.282 response time in milliseconds: 1235
-1 &lt; 403
-1 &lt; date: Wed, 21 Feb 2024 05:24:47 GMT
+22:58:41.733 response time in milliseconds: 1211
+1 &lt; 405
+1 &lt; date: Wed, 21 Feb 2024 03:58:41 GMT
 1 &lt; server: envoy
-1 &lt; content-length: 30
+1 &lt; allow: POST
+1 &lt; content-length: 31
 1 &lt; content-type: application/json
-1 &lt; x-envoy-upstream-service-time: 2
-{&quot;detail&quot;:&quot;Not authenticated&quot;}
+1 &lt; x-envoy-upstream-service-time: 3
+{&quot;detail&quot;:&quot;Method Not Allowed&quot;}
 
 </div>   
 
@@ -153,14 +154,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref failed">11</div>
+    <div class="step-container" id="0.12">
+      <div class="step-ref failed">12</div>
       
       <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">3</div>
+    <div class="time-cell failed">11</div>
   </div>
 
    
@@ -169,11 +170,11 @@
 
   
 
-  <div class="preformatted" data-parent="0.11">00:24:47.319 src/test/java/user/get/users-get.feature:11
+  <div class="preformatted" data-parent="0.12">22:58:42.004 src/test/java/user/get/users-get.feature:12
 Then status 200
-status code was: 403, expected: 200, response time in milliseconds: 1235, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all, response: 
-{&quot;detail&quot;:&quot;Not authenticated&quot;}
-src/test/java/user/get/users-get.feature:11
+status code was: 405, expected: 200, response time in milliseconds: 1211, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/, response: 
+{&quot;detail&quot;:&quot;Method Not Allowed&quot;}
+src/test/java/user/get/users-get.feature:12
 </div>   
 
   
