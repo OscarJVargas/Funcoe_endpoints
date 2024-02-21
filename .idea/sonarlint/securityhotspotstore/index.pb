@@ -1573,3 +1573,5 @@ w
 G.idea/sonarlint/issuestore/a/4/a473c745b2ad2212a2456bd7c0d6464dd4f614ea,e\1\e1ca37934ad27caf6ce06f9057c29a9c1982af54
 w
 G.idea/sonarlint/issuestore/a/5/a5c7463b6ec930283aedf58e19258df7df89cc5e,8\b\8b248e6107de22fc01942371670afb5c22b65efc
+Y
+)src/test/java/user/rol/create_rol.feature,3\4\34387781987fe49ba21f32ff9d884bd2a9906380
