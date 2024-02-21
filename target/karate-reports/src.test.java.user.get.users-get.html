@@ -28,21 +28,21 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-02-21 12:24:47 a. m.</div>
+    <div>2024-02-21 12:34:56 a. m.</div>
   </div>        
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
-            <a href="#[1:8]"><span>[1:8]</span> <span>Get a user</span></a>
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get all user</span></a>
           </div>
         </div>
       </div>
@@ -52,10 +52,8 @@
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
           <span class="feature-path">src/test/java/user/get/users-get.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Get user on request</span>
-          <span class="feature-description">Background
-    * call read(&quot;../token/users-token-post.feature@token&quot;)
-    * header Authorization = Bearer + token</span>
+          <span class="feature-name">Get all user on request</span>
+          <span class="feature-description"></span>
         </div>
         <div class="scenario">
           <div class="scenario-heading" id="[1:8]">
@@ -65,15 +63,277 @@
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[1:8]</span>
-                <span class="scenario-name">Get a user</span>
+                <span class="scenario-name">Get all user</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1853</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2941</span>
             </div>
           </div>
-          
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2508</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.user.get.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">2177</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;user&quot;: &quot;default&quot;, &quot;password&quot;: &quot;default&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">80</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2041</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.8">00:34:55.103 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;default&quot;,&quot;password&quot;:&quot;default&quot;}
+
+00:34:56.328 response time in milliseconds: 1222
+1 &lt; 200
+1 &lt; date: Wed, 21 Feb 2024 05:34:55 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 167
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 323
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZGVmYXVsdCIsImV4cGlyZXMiOjE3MDg0OTQ2OTYuNzEzNTU5NH0.4OoH2J_jAr2ZGS2PFXYpayQIXnYppnXrev9TCBo2Tpc&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">16</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">23</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.11">00:34:56.383 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZGVmYXVsdCIsImV4cGlyZXMiOjE3MDg0OTQ2OTYuNzEzNTU5NH0.4OoH2J_jAr2ZGS2PFXYpayQIXnYppnXrev9TCBo2Tpc 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot;  + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
           <div><div>
   
 
@@ -87,7 +347,7 @@
         <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">115</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -115,7 +375,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1735</div>
+    <div class="time-cell passed">413</div>
   </div>
 
    
@@ -124,22 +384,23 @@
 
   
 
-  <div class="preformatted" data-parent="0.10">00:24:46.044 request:
-1 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all
-1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
-1 &gt; Accept-Encoding: gzip,deflate
+  <div class="preformatted" data-parent="0.10">00:34:56.406 request:
+2 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZGVmYXVsdCIsImV4cGlyZXMiOjE3MDg0OTQ2OTYuNzEzNTU5NH0.4OoH2J_jAr2ZGS2PFXYpayQIXnYppnXrev9TCBo2Tpc
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
 
 
-00:24:47.282 response time in milliseconds: 1235
-1 &lt; 403
-1 &lt; date: Wed, 21 Feb 2024 05:24:47 GMT
-1 &lt; server: envoy
-1 &lt; content-length: 30
-1 &lt; content-type: application/json
-1 &lt; x-envoy-upstream-service-time: 2
-{&quot;detail&quot;:&quot;Not authenticated&quot;}
+00:34:56.809 response time in milliseconds: 403
+2 &lt; 200
+2 &lt; date: Wed, 21 Feb 2024 05:34:56 GMT
+2 &lt; server: envoy
+2 &lt; content-length: 1126
+2 &lt; content-type: application/json
+2 &lt; x-envoy-upstream-service-time: 86
+[{&quot;uuid_user&quot;:&quot;06c5fc95-29c9-483c-8b60-d7863a195623&quot;,&quot;user&quot;:&quot;ruben&quot;,&quot;password&quot;:&quot;$2b$12$h.dDbv//NxM/lvBZKyC.xu4DNSjQB7l1WiC6IRMg56huyamRhVNde&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-20T16:37:39&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;44a9bb31-0921-4f7c-92a0-e67a1d92a9a0&quot;,&quot;user&quot;:&quot;testIII&quot;,&quot;password&quot;:&quot;$2b$12$UafxQ1D6zvtxGNjZBnEBS.5dpl4M0Cp5RFtWHIOYK8kKzgai6vNQG&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-18T22:50:32&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;81ab1992-a83d-43f4-b2b1-0fc0ac650df0&quot;,&quot;user&quot;:&quot;default&quot;,&quot;password&quot;:&quot;default&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-18T07:41:22&quot;,&quot;updated_at&quot;:&quot;2024-02-18T10:11:45&quot;,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;85b62fb0-74da-4de1-a4fd-b5b17c86a5da&quot;,&quot;user&quot;:&quot;test&quot;,&quot;password&quot;:&quot;$2b$12$gT6DQuUssTuIQGKJuiTBKOSum2T4fmo4zRBWHSMydgfDYlwhH/nlW&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:false,&quot;created_at&quot;:&quot;2024-02-18T09:47:15&quot;,&quot;updated_at&quot;:&quot;2024-02-18T10:06:21&quot;,&quot;last_connection&quot;:null}]
 
 </div>   
 
@@ -154,13 +415,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.11">
-      <div class="step-ref failed">11</div>
+      <div class="step-ref passed">11</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">3</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -169,12 +430,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.11">00:24:47.319 src/test/java/user/get/users-get.feature:11
-Then status 200
-status code was: 403, expected: 200, response time in milliseconds: 1235, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all, response: 
-{&quot;detail&quot;:&quot;Not authenticated&quot;}
-src/test/java/user/get/users-get.feature:11
-</div>   
+     
 
   
 
