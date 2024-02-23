@@ -7,10 +7,10 @@ Background:
 
 
 @createrol
-  Scenario: create new meter
+  Scenario: create new rol
    Given url 'https://funcoeback-dev-ceqh.3.us-1.fl0.io/roles/'
    And request {"name_rol": "string"}
    When method post
    Then status 200
-   And def rolId = $.uuid_rol
-   And print rolId
+   * def rolId = $.uuid_rol
+
