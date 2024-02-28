@@ -1,0 +1,10 @@
+{
+  "blood_type": "6f454a83-4201-44e3-b7cf-99ba07464519",
+  "document_type_uuid": "09359aab-7354-47c0-ae6b-60d71aea3f08",
+  "email": "example@example.com",
+  "first_name": "string",
+  "gender_uuid": "20be8f69-c198-467c-89be-ee18a7af8b9b",
+  "identification_card": "#(idcardrandom)",
+  "last_name": "string",
+  "phone": "#(telrandom)"
+}

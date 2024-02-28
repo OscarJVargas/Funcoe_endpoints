@@ -14,8 +14,17 @@ dependencies{
     testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
-}
 
-test {
+}
+test{
     useJUnitPlatform()
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+}
+sourceSets{
+    test{
+        resources{
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
 }
