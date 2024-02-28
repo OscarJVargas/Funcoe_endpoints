@@ -36,13 +36,13 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2024-02-28 12:52:52 a. m.</div>
+    <div>2024-02-28 12:13:51 p. m.</div>
   </div>        
 </div>
 
         <div class="nav-container">
           <div class="nav-item failed">
-            <a href="#[1:8]"><span>[1:8]</span> <span>Patch on advisors</span></a>
+            <a href="#[1:9]"><span>[1:9]</span> <span>Patch on advisors</span></a>
           </div>
         </div>
       </div>
@@ -56,29 +56,29 @@
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:8]">
+          <div class="scenario-heading" id="[1:9]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:8]</span>
+                Scenario: <span>[1:9]</span>
                 <span class="scenario-name">Patch on advisors</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>6815</span>
+              <span>ms:</span>&nbsp;<span>6913</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:8]bg">
+            <div class="step-container" id="[1:9]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:8]bg"><div>
+          <div data-parent="[1:9]bg"><div>
   
 
   
@@ -91,7 +91,7 @@
         <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3708</div>
+    <div class="time-cell passed">3567</div>
   </div>
 
    
@@ -110,7 +110,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">src.test.java.advisors.path.user.token.users-token-post</div>
       </div>
-      <div class="time-cell passed">3530</div>
+      <div class="time-cell passed">3310</div>
     </div>
     <div>
       <div><div>
@@ -126,7 +126,7 @@
         <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -154,7 +154,7 @@
         <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
       </div>
     </div>
-    <div class="time-cell passed">51</div>
+    <div class="time-cell passed">80</div>
   </div>
 
    
@@ -182,7 +182,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">3440</div>
+    <div class="time-cell passed">3202</div>
   </div>
 
    
@@ -191,7 +191,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4.0.call.0.8">00:52:45.977 request:
+  <div class="preformatted" data-parent="0.4.0.call.0.8">12:13:45.636 request:
 1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 39
@@ -201,14 +201,14 @@
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
 
-00:52:49.039 response time in milliseconds: 3060
+12:13:48.523 response time in milliseconds: 2886
 1 &lt; 200
-1 &lt; date: Wed, 28 Feb 2024 05:52:42 GMT
+1 &lt; date: Wed, 28 Feb 2024 17:13:46 GMT
 1 &lt; server: envoy
-1 &lt; content-length: 166
+1 &lt; content-length: 164
 1 &lt; content-type: application/json
-1 &lt; x-envoy-upstream-service-time: 2444
-{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTE5OTU2NS4zMTE1MTE1fQ.C8xn3ke7LO4-3J8ZpkcUtI6neexo3TZCqk779NOMSAk&quot;}
+1 &lt; x-envoy-upstream-service-time: 2262
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTI0MDQyOC44MjEzMTd9.8qAwcsuRBh_T5iWqGLQIq2tgXWpSknqqKeXClPMUEAo&quot;}
 
 </div>   
 
@@ -229,7 +229,7 @@
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">20</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -257,7 +257,7 @@
         <span>*</span>&nbsp;<span>def token = $.access_token</span>
       </div>
     </div>
-    <div class="time-cell passed">18</div>
+    <div class="time-cell passed">21</div>
   </div>
 
    
@@ -277,7 +277,7 @@
 
 </div>
 </div>
-          <div data-parent="[1:8]bg"><div>
+          <div data-parent="[1:9]bg"><div>
   
 
   
@@ -290,7 +290,7 @@
         <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
       </div>
     </div>
-    <div class="time-cell passed">10</div>
+    <div class="time-cell passed">9</div>
   </div>
 
    
@@ -305,7 +305,7 @@
 
 </div>
 </div>
-          <div data-parent="[1:8]bg"><div>
+          <div data-parent="[1:9]bg"><div>
   
 
   
@@ -318,7 +318,7 @@
         <span>*</span>&nbsp;<span>call read(&quot;../post/advisors-post.feature@createadvisors&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">3091</div>
+    <div class="time-cell passed">3015</div>
   </div>
 
    
@@ -337,7 +337,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">src.test.java.advisors.path.post.advisors-post</div>
       </div>
-      <div class="time-cell passed">3081</div>
+      <div class="time-cell passed">3004</div>
     </div>
     <div>
       <div><div>
@@ -353,7 +353,7 @@
         <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1510</div>
+    <div class="time-cell passed">1490</div>
   </div>
 
    
@@ -373,7 +373,7 @@
         <div class="step-indent"></div>
         <div class="step-cell passed">src.test.java.advisors.path.user.token.users-token-post</div>
       </div>
-      <div class="time-cell passed">1504</div>
+      <div class="time-cell passed">1485</div>
     </div>
     <div>
       <div><div>
@@ -448,7 +448,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1503</div>
+    <div class="time-cell passed">1484</div>
   </div>
 
    
@@ -457,9 +457,9 @@
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.4.0.call.0.8">00:52:49.107 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.4.0.call.0.8">12:13:48.579 request:
 2 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTE5OTU2NS4zMTE1MTE1fQ.C8xn3ke7LO4-3J8ZpkcUtI6neexo3TZCqk779NOMSAk
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTI0MDQyOC44MjEzMTd9.8qAwcsuRBh_T5iWqGLQIq2tgXWpSknqqKeXClPMUEAo
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Content-Length: 39
 2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
@@ -468,14 +468,14 @@
 2 &gt; Accept-Encoding: gzip,deflate
 {&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
 
-00:52:50.608 response time in milliseconds: 1501
+12:13:50.058 response time in milliseconds: 1479
 2 &lt; 200
-2 &lt; date: Wed, 28 Feb 2024 05:52:45 GMT
+2 &lt; date: Wed, 28 Feb 2024 17:13:48 GMT
 2 &lt; server: envoy
 2 &lt; content-length: 166
 2 &lt; content-type: application/json
-2 &lt; x-envoy-upstream-service-time: 1209
-{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTE5OTU2Ni44ODM1OTg4fQ.dJrjN8W4ebI8vUM0nTVbrYV5-5R7UcdFLXTpn-Sk0M4&quot;}
+2 &lt; x-envoy-upstream-service-time: 1207
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTI0MDQzMC4zNzMwMjM1fQ.9ZHggt2333SnD5x5NlYtWTmdgfRKn3d5yP8st9eWMng&quot;}
 
 </div>   
 
@@ -526,7 +526,7 @@
         <span>*</span>&nbsp;<span>def token = $.access_token</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -587,7 +587,7 @@
         <span>*</span>&nbsp;<span>print token</span>
       </div>
     </div>
-    <div class="time-cell passed">34</div>
+    <div class="time-cell passed">16</div>
   </div>
 
    
@@ -596,7 +596,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.6">00:52:50.644 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTE5OTU2Ni44ODM1OTg4fQ.dJrjN8W4ebI8vUM0nTVbrYV5-5R7UcdFLXTpn-Sk0M4 
+  <div class="preformatted" data-parent="0.6.0.call.0.6">12:13:50.079 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTI0MDQzMC4zNzMwMjM1fQ.9ZHggt2333SnD5x5NlYtWTmdgfRKn3d5yP8st9eWMng 
 </div>   
 
   
@@ -660,7 +660,7 @@
         <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -716,7 +716,7 @@
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">1516</div>
+    <div class="time-cell passed">1474</div>
   </div>
 
    
@@ -725,25 +725,25 @@
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.17">00:52:50.667 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.17">12:13:50.102 request:
 3 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/
-3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTE5OTU2Ni44ODM1OTg4fQ.dJrjN8W4ebI8vUM0nTVbrYV5-5R7UcdFLXTpn-Sk0M4
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTI0MDQzMC4zNzMwMjM1fQ.9ZHggt2333SnD5x5NlYtWTmdgfRKn3d5yP8st9eWMng
 3 &gt; Content-Type: application/json; charset=UTF-8
 3 &gt; Content-Length: 297
 3 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
 3 &gt; Accept-Encoding: gzip,deflate
-{&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 6319356569621 &#39; &quot;,&quot;first_name&quot;:&quot;string&quot;,&quot;last_name&quot;:&quot;string&quot;,&quot;phone&quot;:&quot;string&quot;,&quot;email&quot;:&quot;user@example.com&quot;,&quot;blood_type&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;}
+{&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 5992181338751 &#39; &quot;,&quot;first_name&quot;:&quot;string&quot;,&quot;last_name&quot;:&quot;string&quot;,&quot;phone&quot;:&quot;string&quot;,&quot;email&quot;:&quot;user@example.com&quot;,&quot;blood_type&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;}
 
-00:52:52.180 response time in milliseconds: 1513
+12:13:51.573 response time in milliseconds: 1471
 3 &lt; 200
-3 &lt; date: Wed, 28 Feb 2024 05:52:46 GMT
+3 &lt; date: Wed, 28 Feb 2024 17:13:50 GMT
 3 &lt; server: envoy
 3 &lt; content-length: 404
 3 &lt; content-type: application/json
-3 &lt; x-envoy-upstream-service-time: 1222
-{&quot;uuid_advisor&quot;:&quot;d796f3b5-8156-4302-892f-3de6aa7ea9f1&quot;,&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 6319356569621 &#39; &quot;,&quot;first_name&quot;:&quot;string&quot;,&quot;last_name&quot;:&quot;string&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;phone&quot;:&quot;string&quot;,&quot;email&quot;:&quot;user@example.com&quot;,&quot;blood_type&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;created_at&quot;:&quot;2024-02-28T05:52:47&quot;,&quot;updated_at&quot;:null}
+3 &lt; x-envoy-upstream-service-time: 1214
+{&quot;uuid_advisor&quot;:&quot;1aa2bcbf-8f94-4888-8860-06b3604de895&quot;,&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 5992181338751 &#39; &quot;,&quot;first_name&quot;:&quot;string&quot;,&quot;last_name&quot;:&quot;string&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;phone&quot;:&quot;string&quot;,&quot;email&quot;:&quot;user@example.com&quot;,&quot;blood_type&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;created_at&quot;:&quot;2024-02-28T17:13:51&quot;,&quot;updated_at&quot;:null}
 
 </div>   
 
@@ -829,7 +829,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.20">00:52:52.182 [print] d796f3b5-8156-4302-892f-3de6aa7ea9f1 
+  <div class="preformatted" data-parent="0.6.0.call.0.20">12:13:51.575 [print] 1aa2bcbf-8f94-4888-8860-06b3604de895 
 </div>   
 
   
@@ -847,8 +847,8 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def idcardrandom = &quot; &#39; &quot; + Math.floor(Math.random() * 100000000000) + 1 + &quot; &#39; &quot;</span>
@@ -875,8 +875,8 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
       
       <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def telrandom = &quot; &#39; &quot; + Math.floor(Math.random() * 1000000000) + 1 + &quot; &#39; &quot;</span>
@@ -903,11 +903,68 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.11">
-      <div class="step-ref passed">11</div>
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
       
       <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/update/&quot;  + advisorsId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print advisorsId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">12:13:51.584 [print] 1aa2bcbf-8f94-4888-8860-06b3604de895 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -931,75 +988,14 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>print advisorsId</span>
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/json&#39;</span>
       </div>
     </div>
     <div class="time-cell passed">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.12">00:52:52.187 [print] d796f3b5-8156-4302-892f-3de6aa7ea9f1 
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.13">
-      <div class="step-ref failed">13</div>
-      
-      <div class="step-cell failed">
-        <span>*</span>&nbsp;<span>call read(&quot;../../data/Patchadvisors.json&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell failed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.13">00:52:52.189 src/test/java/advisors/path/advisors-patch.feature:13
-* call read(&quot;../../data/Patchadvisors.json&quot;)
-not a callable feature or js function: [type: MAP, value: {blood_type=6f454a83-4201-44e3-b7cf-99ba07464519, document_type_uuid=09359aab-7354-47c0-ae6b-60d71aea3f08, email=example@example.com, first_name=string, gender_uuid=20be8f69-c198-467c-89be-ee18a7af8b9b, identification_card= &#39; 378336359951 &#39; , last_name=string, phone= &#39; 2934988501 &#39; }]
-src/test/java/advisors/path/advisors-patch.feature:13
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref skipped">14</div>
-      
-      <div class="step-cell skipped">
-        <span>When</span>&nbsp;<span>method patch</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1020,11 +1016,188 @@ src/test/java/advisors/path/advisors-patch.feature:13
   
 
   <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref skipped">15</div>
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def jsonUpdate = read(&quot;../../data/Patchadvisors.json&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>request jsonUpdate</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print jsonUpdate</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">12:13:51.588 [print] {
+  &quot;document_type_uuid&quot;: &quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,
+  &quot;identification_card&quot;: &quot; &#39; 88099730971 &#39; &quot;,
+  &quot;first_name&quot;: &quot;string&quot;,
+  &quot;last_name&quot;: &quot;string&quot;,
+  &quot;gender_uuid&quot;: &quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,
+  &quot;phone&quot;: &quot; &#39; 2000734921 &#39; &quot;,
+  &quot;email&quot;: &quot;example@example.com&quot;,
+  &quot;blood_type&quot;: &quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell passed">312</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">12:13:51.589 request:
+4 &gt; PATCH https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/update/1aa2bcbf-8f94-4888-8860-06b3604de895
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTI0MDQzMC4zNzMwMjM1fQ.9ZHggt2333SnD5x5NlYtWTmdgfRKn3d5yP8st9eWMng
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Accept: application/json
+4 &gt; Content-Length: 308
+4 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 88099730971 &#39; &quot;,&quot;first_name&quot;:&quot;string&quot;,&quot;last_name&quot;:&quot;string&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;phone&quot;:&quot; &#39; 2000734921 &#39; &quot;,&quot;email&quot;:&quot;example@example.com&quot;,&quot;blood_type&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;}
+
+12:13:51.899 response time in milliseconds: 310
+4 &lt; 404
+4 &lt; date: Wed, 28 Feb 2024 17:13:51 GMT
+4 &lt; server: envoy
+4 &lt; content-length: 22
+4 &lt; content-type: application/json
+4 &lt; x-envoy-upstream-service-time: 4
+{&quot;detail&quot;:&quot;Not Found&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">12:13:51.900 src/test/java/advisors/path/advisors-patch.feature:20
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 310, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/update/1aa2bcbf-8f94-4888-8860-06b3604de895, response: 
+{&quot;detail&quot;:&quot;Not Found&quot;}
+src/test/java/advisors/path/advisors-patch.feature:20
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref skipped">21</div>
       
       <div class="step-cell skipped">
-        <span>Then</span>&nbsp;<span>status 200</span>
+        <span>And</span>&nbsp;<span>match $.idad == advisorsId</span>
       </div>
     </div>
     <div class="time-cell skipped">0</div>
