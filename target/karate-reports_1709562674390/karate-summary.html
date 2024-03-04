@@ -10,7 +10,13 @@
     <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
     <script type="text/javascript" src="res/bootstrap.min.js"></script>
     <script type="text/javascript" src="res/karate-report.js"></script>
-    <title>Karate Tags Report</title>  
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_summary');
+    </script>
+    <title>Karate Summary Report</title>  
   </head>
   <body>   
     <div id="root-container">
@@ -27,31 +33,40 @@
     </div>
   </div>
   <div id="nav-type">
-    <div>Tags</div>
+    <div>Features</div>
   </div>         
   <div id="nav-date">
-    <div>2024-03-04 09:34:35 a. m.</div>
+    <div>2024-03-04 09:30:21 a. m.</div>
   </div>        
 </div>
 
       </div>
       <div id="content">
         <div class="page-heading alert alert-primary">
-          <a href="karate-summary.html">Summary</a>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
         </div>       
-        <table class="tags-table table table-sm ">
+        <table class="features-table table table-sm">
           <thead>
             <tr>
-              <th class="feature-cell">Feature</th>
-              <th classapend="failed">createrol</th>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="failed">
-              <td class="feature-cell">
+            <tr class="failed">              
+              <td>
                 <a href="src.test.java.user.rol.create_rol.html">src/test/java/user/rol/create_rol.feature</a>
               </td>
-              <td classapend="failed">X</td>
+              <td>Post a rol</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2201</td>            
             </tr>            
           </tbody>
         </table>
