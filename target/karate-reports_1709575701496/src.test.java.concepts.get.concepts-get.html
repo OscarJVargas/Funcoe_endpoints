@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.concepts.get.concepts-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-04 01:01:21 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Get a advisors</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/concepts/get/concepts-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get advisors on request</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Get a advisors</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>4221</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3198</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.concepts.get.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">3013</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2938</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">13:01:17.669 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+13:01:20.292 response time in milliseconds: 2621
+1 &lt; 200
+1 &lt; date: Mon, 04 Mar 2024 18:01:18 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 166
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 2024
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY3NTI4MC42MzU4Nzc0fQ.ku-iCkRTrC7kyfNYlLO_4TDkwT3TkA4UDeYvaAsTrE0&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">13:01:20.341 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY3NTI4MC42MzU4Nzc0fQ.ku-iCkRTrC7kyfNYlLO_4TDkwT3TkA4UDeYvaAsTrE0 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/concepts/all/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1004</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">13:01:20.343 request:
+2 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/concepts/all/
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY3NTI4MC42MzU4Nzc0fQ.ku-iCkRTrC7kyfNYlLO_4TDkwT3TkA4UDeYvaAsTrE0
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+13:01:21.343 response time in milliseconds: 1000
+2 &lt; 200
+2 &lt; date: Mon, 04 Mar 2024 18:01:20 GMT
+2 &lt; server: envoy
+2 &lt; content-length: 1686
+2 &lt; content-type: application/json
+2 &lt; x-envoy-upstream-service-time: 734
+[{&quot;uuid_concept&quot;:&quot;51467e73-e060-4327-87b0-72a13d97ffc0&quot;,&quot;name&quot;:&quot;test&quot;,&quot;created_at&quot;:&quot;2024-02-24T21:39:51&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;451954c1-cd96-4248-b844-bd75faea0cdc&quot;,&quot;name&quot;:&quot;Uniforme&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;461ad9f4-48c1-436d-b9f6-111ada476ab5&quot;,&quot;name&quot;:&quot;Seminario&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;59244e78-9dc1-4343-a6b5-ba89fde0caf7&quot;,&quot;name&quot;:&quot;Clase&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;59a7735d-6671-4425-88c8-2040cfe8905f&quot;,&quot;name&quot;:&quot;Inscripcion&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;5d505d53-20ae-49fb-b08a-b5a823fcbf1d&quot;,&quot;name&quot;:&quot;Carnet&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;5d9eb150-c586-49ea-90b3-cb401ea34e94&quot;,&quot;name&quot;:&quot;Derecho a Grado&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;5e82d7ea-f5bd-4baf-8975-e972a38bb657&quot;,&quot;name&quot;:&quot;Seguro&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;74dc7a71-bf00-4312-be20-0f68ba3be4e8&quot;,&quot;name&quot;:&quot;Curso Ingles&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;78ecb348-4071-41e2-a5e1-e88700988215&quot;,&quot;name&quot;:&quot;Supletorio&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;c673f289-8540-4916-aae1-9cfeb8a9bbd9&quot;,&quot;name&quot;:&quot;Habilitación&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;d99c5657-fdd6-4409-b588-7d2bca8fbe63&quot;,&quot;name&quot;:&quot;Curso Lecto Escritura&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null},{&quot;uuid_concept&quot;:&quot;e42688dd-52b1-4419-9219-d16f9517f29a&quot;,&quot;name&quot;:&quot;Constancia Estudio&quot;,&quot;created_at&quot;:&quot;2024-02-17T20:17:13&quot;,&quot;updated_at&quot;:null}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

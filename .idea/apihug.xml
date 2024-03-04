@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ApiHug.Project.Settings">
+    <servers />
+    <env-settings />
+    <gpt-settings />
+    <general-settings>
+      <regional-settings>
+        <date-format value="MEDIUM" />
+        <number-format value="UNGROUPED" />
+        <locale value="SYSTEM_DEFAULT" />
+        <use-custom-formats value="false" />
+      </regional-settings>
+      <http-settings>
+        <http-connect-timeout value="5" />
+        <http-read-timeout value="5" />
+        <http-max-redirect value="10" />
+      </http-settings>
+    </general-settings>
+  </component>
+</project>
