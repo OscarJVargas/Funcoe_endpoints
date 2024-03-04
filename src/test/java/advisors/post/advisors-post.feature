@@ -18,4 +18,6 @@ Feature: Post advisors on request
     Then status 200
     * def advisorsId = $.uuid_advisor
     * print advisorsId
+    * def uuidDt = $.uuid_document_type
+    * print uuidDt
 
