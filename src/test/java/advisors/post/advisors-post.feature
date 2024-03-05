@@ -53,11 +53,13 @@ Feature: Post advisors on request
     }
     """
     * def randomlastname = generateRandomLastName()
+      * def currentDate = karate.now
+      * print 'Fecha actual:', currentDate
 
     Given url "https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/"
     And request { "document_type_uuid": "09359aab-7354-47c0-ae6b-60d71aea3f08","identification_card": '#(randomidcard)', "first_name": '#(randomname)', "last_name": '#(randomlastname)', "phone": '#(randomphone)', "email": '#(randomMail)',"blood_type": "6f454a83-4201-44e3-b7cf-99ba07464519", "gender_uuid": "20be8f69-c198-467c-89be-ee18a7af8b9b"}
     When method post
     Then status 200
     * def advisorsId = $.uuid_advisor
-    * print advisorsId
+    * print  advisorsId
 

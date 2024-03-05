@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.students.get.students_idcard-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-04 06:11:17 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Get a studentsIdcard</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/students/get/students_idcard-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get studentsIdcard on request</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Get a studentsIdcard</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>6670</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2238</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.students.get.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">2062</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">58</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1972</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">18:11:11.950 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+18:11:13.480 response time in milliseconds: 1529
+1 &lt; 200
+1 &lt; date: Mon, 04 Mar 2024 23:11:13 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 166
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 725
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3NC4zODk5OTM0fQ.Rkz5mvlEQX3pzB7WAqEPcTZ0oyGx3tdRCjHqiypM2-w&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">27</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">18:11:13.544 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3NC4zODk5OTM0fQ.Rkz5mvlEQX3pzB7WAqEPcTZ0oyGx3tdRCjHqiypM2-w 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../post/students-post.feature@createstudents&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4402</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.students.get.post.students-post</div>
+      </div>
+      <div class="time-cell passed">4389</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1015</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.7.0.call">
+      <div class="step-container" id="0.7.0.call.0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.students.get.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">1006</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1005</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.4.0.call.0.8">18:11:13.564 request:
+2 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3NC4zODk5OTM0fQ.Rkz5mvlEQX3pzB7WAqEPcTZ0oyGx3tdRCjHqiypM2-w
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 39
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+18:11:14.566 response time in milliseconds: 1002
+2 &lt; 200
+2 &lt; date: Mon, 04 Mar 2024 23:11:14 GMT
+2 &lt; server: envoy
+2 &lt; content-length: 166
+2 &lt; content-type: application/json
+2 &lt; x-envoy-upstream-service-time: 722
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3NS40ODY3Njg3fQ.MI1MeaDYY4qml9lGBByF6ykXTUeOXgkYZxCz-BzMvzI&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.6">18:11:14.569 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3NS40ODY3Njg3fQ.MI1MeaDYY4qml9lGBByF6ykXTUeOXgkYZxCz-BzMvzI 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../advisors/post/advisors-post.feature@createadvisors&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2591</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.7.0.call">
+      <div class="step-container" id="0.7.0.call.0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.students.get.advisors.post.advisors-post</div>
+      </div>
+      <div class="time-cell passed">2564</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">987</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+      <div class="step-container" id="0.7.0.call.0.7.0.call.0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.students.get.post.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">983</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">982</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.4.0.call.0.8">18:11:14.584 request:
+3 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3NS40ODY3Njg3fQ.MI1MeaDYY4qml9lGBByF6ykXTUeOXgkYZxCz-BzMvzI
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 39
+3 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+18:11:15.564 response time in milliseconds: 980
+3 &lt; 200
+3 &lt; date: Mon, 04 Mar 2024 23:11:15 GMT
+3 &lt; server: envoy
+3 &lt; content-length: 166
+3 &lt; content-type: application/json
+3 &lt; x-envoy-upstream-service-time: 724
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3Ni40ODUwNTE2fQ.ViJ2LtNXfpgitZdYbDKTXYQe9p2GEyl_HSChe_KJwRo&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.6">18:11:15.566 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3Ni40ODUwNTE2fQ.ViJ2LtNXfpgitZdYbDKTXYQe9p2GEyl_HSChe_KJwRo 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">## * def random = function(){ var temp = &#39;&#39;; karate.repeat(10, function(){ temp += Math.floor(Math.random() * 10000) + 1 }); return temp; }</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">##* def random = Math.floor(Math.random() * 10000) + 1</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomidcard = &quot; &#39; &quot; + Math.floor(Math.random() * 1000000000000) + 1 + &quot; &#39; &quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">28</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomphone = &quot; +57 &quot; + Math.floor(Math.random() * 1000000000) + 1 + &quot; &#39; &quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomMail =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.15">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomMail = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomMail += chars.charAt(randomIndex);
+    }
+    return randomMail;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.28">
+      <div class="step-ref bg-step">28</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomMail = generateRandomMail() + &quot;@gmail.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.29">
+      <div class="step-ref bg-step">29</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomName =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.29">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomName = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomName += chars.charAt(randomIndex);
+    }
+    return randomName;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.41">
+      <div class="step-ref bg-step">41</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomname = generateRandomName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.43">
+      <div class="step-ref bg-step">43</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomLastName =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.43">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomlastname = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomlastname += chars.charAt(randomIndex);
+    }
+    return randomlastname;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.55">
+      <div class="step-ref bg-step">55</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomlastname = generateRandomLastName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.56">
+      <div class="step-ref bg-step">56</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def currentDate = karate.now</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.57">
+      <div class="step-ref bg-step">57</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Fecha actual:&#39;, currentDate</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.57">18:11:15.651 [print] Fecha actual: null 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.59">
+      <div class="step-ref bg-step">59</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.60">
+      <div class="step-ref bg-step">60</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;document_type_uuid&quot;: &quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;: &#39;#(randomidcard)&#39;, &quot;first_name&quot;: &#39;#(randomname)&#39;, &quot;last_name&quot;: &#39;#(randomlastname)&#39;, &quot;phone&quot;: &#39;#(randomphone)&#39;, &quot;email&quot;: &#39;#(randomMail)&#39;,&quot;blood_type&quot;: &quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;, &quot;gender_uuid&quot;: &quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.61">
+      <div class="step-ref bg-step">61</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1487</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.61">18:11:15.658 request:
+4 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3Ni40ODUwNTE2fQ.ViJ2LtNXfpgitZdYbDKTXYQe9p2GEyl_HSChe_KJwRo
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 315
+4 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 6243425644131 &#39; &quot;,&quot;first_name&quot;:&quot;tixlvmmo&quot;,&quot;last_name&quot;:&quot;azuxdfgl&quot;,&quot;phone&quot;:&quot; +57 7286074901 &#39; &quot;,&quot;email&quot;:&quot;vkdchrme@gmail.com&quot;,&quot;blood_type&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;}
+
+18:11:17.138 response time in milliseconds: 1480
+4 &lt; 200
+4 &lt; date: Mon, 04 Mar 2024 23:11:16 GMT
+4 &lt; server: envoy
+4 &lt; content-length: 422
+4 &lt; content-type: application/json
+4 &lt; x-envoy-upstream-service-time: 1212
+{&quot;uuid_advisor&quot;:&quot;f442c380-2da0-466f-8d6b-b7e3e3e6210c&quot;,&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 6243425644131 &#39; &quot;,&quot;first_name&quot;:&quot;tixlvmmo&quot;,&quot;last_name&quot;:&quot;azuxdfgl&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;phone&quot;:&quot; +57 7286074901 &#39; &quot;,&quot;email&quot;:&quot;vkdchrme@gmail.com&quot;,&quot;blood_type&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;created_at&quot;:&quot;2024-03-04T23:11:17&quot;,&quot;updated_at&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.62">
+      <div class="step-ref bg-step">62</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.63">
+      <div class="step-ref bg-step">63</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def advisorsId = $.uuid_advisor</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.7.0.call.0.64">
+      <div class="step-ref bg-step">64</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print  advisorsId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.7.0.call.0.64">18:11:17.143 [print] f442c380-2da0-466f-8d6b-b7e3e3e6210c 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/students/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;document_type_uuid&quot;: &quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,  &quot;identification_card&quot;: &quot;#(randomidcard)&quot;,  &quot;birthdate&quot;: &quot;2004-03-04&quot;,  &quot;first_name&quot;: &quot;#(randomname)&quot;,  &quot;last_name&quot;: &quot;#(randomlastname)&quot;,  &quot;municipality&quot;: &quot;string&quot;,  &quot;address&quot;: &quot;string&quot;,  &quot;phone&quot;: &quot;#(randomphone)&quot;,  &quot;email&quot;: &quot;#(randomMail)&quot;,  &quot;gender_uuid&quot;: &quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,  &quot;blood_type_uuid&quot;: &quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,  &quot;recommendation&quot;: &quot;string&quot;,  &quot;advertising_medium&quot;: &quot;string&quot;,  &quot;day_uuid&quot;: &quot;572fd374-ea03-47a1-ab03-51eb27c10b59&quot;,  &quot;working_day&quot;: &quot;string&quot;,  &quot;registration_number&quot;: &quot;1&quot;,  &quot;advisor_uuid&quot;: &#39;#(advisorsId)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">778</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.15">18:11:17.163 request:
+5 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/students/
+5 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5Mzg3Ni40ODUwNTE2fQ.ViJ2LtNXfpgitZdYbDKTXYQe9p2GEyl_HSChe_KJwRo
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Content-Length: 597
+5 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 6243425644131 &#39; &quot;,&quot;birthdate&quot;:&quot;2004-03-04&quot;,&quot;first_name&quot;:&quot;tixlvmmo&quot;,&quot;last_name&quot;:&quot;azuxdfgl&quot;,&quot;municipality&quot;:&quot;string&quot;,&quot;address&quot;:&quot;string&quot;,&quot;phone&quot;:&quot; +57 7286074901 &#39; &quot;,&quot;email&quot;:&quot;vkdchrme@gmail.com&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;blood_type_uuid&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;recommendation&quot;:&quot;string&quot;,&quot;advertising_medium&quot;:&quot;string&quot;,&quot;day_uuid&quot;:&quot;572fd374-ea03-47a1-ab03-51eb27c10b59&quot;,&quot;working_day&quot;:&quot;string&quot;,&quot;registration_number&quot;:&quot;1&quot;,&quot;advisor_uuid&quot;:&quot;f442c380-2da0-466f-8d6b-b7e3e3e6210c&quot;}
+
+18:11:17.937 response time in milliseconds: 774
+5 &lt; 200
+5 &lt; date: Mon, 04 Mar 2024 23:11:17 GMT
+5 &lt; server: envoy
+5 &lt; content-length: 702
+5 &lt; content-type: application/json
+5 &lt; x-envoy-upstream-service-time: 488
+{&quot;uuid_student&quot;:&quot;9c4a7bf8-9dd4-4a2c-b08a-51364b187c4b&quot;,&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 6243425644131 &#39; &quot;,&quot;birthdate&quot;:&quot;2004-03-04&quot;,&quot;first_name&quot;:&quot;tixlvmmo&quot;,&quot;last_name&quot;:&quot;azuxdfgl&quot;,&quot;municipality&quot;:&quot;string&quot;,&quot;address&quot;:&quot;string&quot;,&quot;phone&quot;:&quot; +57 7286074901 &#39; &quot;,&quot;email&quot;:&quot;vkdchrme@gmail.com&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;blood_type_uuid&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;recommendation&quot;:&quot;string&quot;,&quot;advertising_medium&quot;:&quot;string&quot;,&quot;day_uuid&quot;:&quot;572fd374-ea03-47a1-ab03-51eb27c10b59&quot;,&quot;working_day&quot;:&quot;string&quot;,&quot;registration_number&quot;:1,&quot;advisor_uuid&quot;:&quot;f442c380-2da0-466f-8d6b-b7e3e3e6210c&quot;,&quot;created_at&quot;:&quot;2024-03-04T23:11:18&quot;,&quot;updated_at&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def studentsId = $.uuid_student</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot; se a creado la identificacion de estudiante # &quot; + studentsId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.18">18:11:17.942 [print]  se a creado la identificacion de estudiante # 9c4a7bf8-9dd4-4a2c-b08a-51364b187c4b 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def idcard = $.identification_card</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot; la cedula del estudiante es la # &quot; + idcard</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.20">18:11:17.944 [print]  la cedula del estudiante es la #  &#39; 6243425644131 &#39;  
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/students/&#39; + idcard</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref failed">13</div>
+      
+      <div class="step-cell failed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">18:11:17.947 src/test/java/students/get/students_idcard-get.feature:13
+When method get
+java.net.URISyntaxException: Illegal character in path at index 51: https://funcoeback-dev-ceqh.3.us-1.fl0.io/students/ &#39; 6243425644131 &#39; 
+src/test/java/students/get/students_idcard-get.feature:13
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

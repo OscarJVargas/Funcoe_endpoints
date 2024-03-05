@@ -3,9 +3,9 @@ Feature: Post user on request
   Background:
     * call read("../token/users-token-post.feature@token")
     * header Authorization = "Bearer " + token
-    * call read("../rol/create_rol.feature@createrol")
+    * call read("../../roles/post/create_rol-post.feature@createrol")
 
-  @Createuser
+  @createuser
 
     Scenario: Post on user
     * def generateRandomName =

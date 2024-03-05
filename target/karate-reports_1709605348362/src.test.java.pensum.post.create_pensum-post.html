@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.pensum.post.create_pensum-post</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-04 09:16:36 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>create new pensum</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/pensum/post/create_pensum-post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Post a pensum</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">createshifts</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">create new pensum</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>6164</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2037</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.pensum.post.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">1863</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">36</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1800</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.8">21:16:31.152 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+21:16:32.583 response time in milliseconds: 1429
+1 &lt; 200
+1 &lt; date: Tue, 05 Mar 2024 02:16:31 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 164
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 726
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5Mi43NTEzNjd9.tT-2rOWqiAh8uQuMCMSNQpWDxhpb8wVkpXPLJ_cv-Ns&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">17</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot;  + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../semesters/post/create_semesters-post.feature@createsemesters&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1791</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.pensum.post.semesters.post.create_semesters-post</div>
+      </div>
+      <div class="time-cell passed">1784</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.3">
+      <div class="step-ref bg-step">3</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1005</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.7.0.call">
+      <div class="step-container" id="0.7.0.call.0.3.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.pensum.post.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">998</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.3.0.call">
+    <div class="step-container" id="0.7.0.call.0.3.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.3.0.call">
+    <div class="step-container" id="0.7.0.call.0.3.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.3.0.call">
+    <div class="step-container" id="0.7.0.call.0.3.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">997</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.3.0.call.0.8">21:16:32.638 request:
+2 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5Mi43NTEzNjd9.tT-2rOWqiAh8uQuMCMSNQpWDxhpb8wVkpXPLJ_cv-Ns
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 39
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+21:16:33.630 response time in milliseconds: 992
+2 &lt; 200
+2 &lt; date: Tue, 05 Mar 2024 02:16:32 GMT
+2 &lt; server: envoy
+2 &lt; content-length: 164
+2 &lt; content-type: application/json
+2 &lt; x-envoy-upstream-service-time: 722
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5My44MDY0OTF9.YqhagQalzyOgHknnAfxoRKo7IgRXsbHPFWgdEKDbSsI&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.3.0.call">
+    <div class="step-container" id="0.7.0.call.0.3.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.3.0.call">
+    <div class="step-container" id="0.7.0.call.0.3.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot;  + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomsemester =  &quot;&#39;&quot; + Math.floor(Math.random() * 10) + 1 + &quot;&#39;&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/semesters/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;uuid_semester&quot;: &quot;string&quot;, &quot;name&quot;: &#39;#(randomsemester)&#39;, &quot;created_at&quot;: &quot;2024-03-05T01:57:40.915Z&quot;, &quot;updated_at&quot;: &quot;2024-03-05T01:57:40.915Z&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">749</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.12">21:16:33.652 request:
+3 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/semesters/
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5My44MDY0OTF9.YqhagQalzyOgHknnAfxoRKo7IgRXsbHPFWgdEKDbSsI
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 120
+3 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;uuid_semester&quot;:&quot;string&quot;,&quot;name&quot;:&quot;&#39;51&#39;&quot;,&quot;created_at&quot;:&quot;2024-03-05T01:57:40.915Z&quot;,&quot;updated_at&quot;:&quot;2024-03-05T01:57:40.915Z&quot;}
+
+21:16:34.398 response time in milliseconds: 746
+3 &lt; 200
+3 &lt; date: Tue, 05 Mar 2024 02:16:33 GMT
+3 &lt; server: envoy
+3 &lt; content-length: 140
+3 &lt; content-type: application/json
+3 &lt; x-envoy-upstream-service-time: 488
+{&quot;created_at&quot;:&quot;2024-03-05T02:16:34&quot;,&quot;name&quot;:&quot;&#39;51&#39;&quot;,&quot;uuid_semester&quot;:&quot;bec5f57f-4a30-4d75-8922-114cb0832539&quot;,&quot;updated_at&quot;:&quot;2024-03-05T01:57:41&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def semesterId = $.uuid_semester</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print semesterId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.15">21:16:34.414 [print] bec5f57f-4a30-4d75-8922-114cb0832539 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../programs/post/programs-post.feature@createprograms&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1858</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.8.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.pensum.post.programs.post.programs-post</div>
+      </div>
+      <div class="time-cell passed">1840</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1022</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.8.0.call">
+      <div class="step-container" id="0.8.0.call.0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.pensum.post.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">1016</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.4.0.call">
+    <div class="step-container" id="0.8.0.call.0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.4.0.call">
+    <div class="step-container" id="0.8.0.call.0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.4.0.call">
+    <div class="step-container" id="0.8.0.call.0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1015</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.4.0.call.0.8">21:16:34.428 request:
+4 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5My44MDY0OTF9.YqhagQalzyOgHknnAfxoRKo7IgRXsbHPFWgdEKDbSsI
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 39
+4 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+21:16:35.441 response time in milliseconds: 1013
+4 &lt; 200
+4 &lt; date: Tue, 05 Mar 2024 02:16:34 GMT
+4 &lt; server: envoy
+4 &lt; content-length: 166
+4 &lt; content-type: application/json
+4 &lt; x-envoy-upstream-service-time: 725
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5NS42MTI4ODc0fQ.4mVwch9ppqAZ-LXFywdP9Nbraw4WQrQK2JHUAuIIsNM&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.4.0.call">
+    <div class="step-container" id="0.8.0.call.0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call.0.4.0.call">
+    <div class="step-container" id="0.8.0.call.0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.6">21:16:35.443 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5NS42MTI4ODc0fQ.4mVwch9ppqAZ-LXFywdP9Nbraw4WQrQK2JHUAuIIsNM 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomName =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.8.0.call.0.11">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomName = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomName += chars.charAt(randomIndex);
+    }
+    return randomName;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.23">
+      <div class="step-ref bg-step">23</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomname = generateRandomName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.25">
+      <div class="step-ref bg-step">25</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/programs/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.26">
+      <div class="step-ref bg-step">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;name&quot;: &#39;#(randomname)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.27">
+      <div class="step-ref bg-step">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">786</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.27">21:16:35.477 request:
+5 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/programs/
+5 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5NS42MTI4ODc0fQ.4mVwch9ppqAZ-LXFywdP9Nbraw4WQrQK2JHUAuIIsNM
+5 &gt; Content-Type: application/json; charset=UTF-8
+5 &gt; Content-Length: 19
+5 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+5 &gt; Connection: Keep-Alive
+5 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+5 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;chroavma&quot;}
+
+21:16:36.260 response time in milliseconds: 783
+5 &lt; 200
+5 &lt; date: Tue, 05 Mar 2024 02:16:35 GMT
+5 &lt; server: envoy
+5 &lt; content-length: 126
+5 &lt; content-type: application/json
+5 &lt; x-envoy-upstream-service-time: 492
+{&quot;uuid_program&quot;:&quot;3d12cfe7-6455-4c08-8e53-e86fe85228b6&quot;,&quot;name&quot;:&quot;chroavma&quot;,&quot;created_at&quot;:&quot;2024-03-05T02:16:35&quot;,&quot;updated_at&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.28">
+      <div class="step-ref bg-step">28</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.29">
+      <div class="step-ref bg-step">29</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def programsId = $.uuid_program</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.8.0.call">
+    <div class="step-container" id="0.8.0.call.0.30">
+      <div class="step-ref bg-step">30</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print programsId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8.0.call.0.30">21:16:36.262 [print] 3d12cfe7-6455-4c08-8e53-e86fe85228b6 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomquantity_classes =  Math.floor(Math.random() * 100) + 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomamount_to_paid = Math.floor(Math.random() * 100000) + 1</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/pensum/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;program_uuid&quot;: &#39;(#programsId)&#39;, &quot;semester_uuid&quot;: &#39;#(semesterId)&#39;, &quot;quantity_classes&quot;:&#39;#(randomquantity_classes)&#39;, &quot;amount_to_paid&quot;: &#39;#(randomamount_to_paid)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">464</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">21:16:36.277 request:
+6 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/pensum/
+6 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTcwNDk5NS42MTI4ODc0fQ.4mVwch9ppqAZ-LXFywdP9Nbraw4WQrQK2JHUAuIIsNM
+6 &gt; Content-Type: application/json; charset=UTF-8
+6 &gt; Content-Length: 132
+6 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+6 &gt; Connection: Keep-Alive
+6 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+6 &gt; Accept-Encoding: gzip,deflate
+{&quot;program_uuid&quot;:&quot;(#programsId)&quot;,&quot;semester_uuid&quot;:&quot;bec5f57f-4a30-4d75-8922-114cb0832539&quot;,&quot;quantity_classes&quot;:57,&quot;amount_to_paid&quot;:33144}
+
+21:16:36.738 response time in milliseconds: 461
+6 &lt; 400
+6 &lt; date: Tue, 05 Mar 2024 02:16:36 GMT
+6 &lt; server: envoy
+6 &lt; content-length: 614
+6 &lt; content-type: application/json
+6 &lt; x-envoy-upstream-service-time: 172
+{&quot;detail&quot;:&quot;(pymysql.err.OperationalError) (1364, \&quot;Field &#39;uuid_pensum&#39; doesn&#39;t have a default value\&quot;)\n[SQL: INSERT INTO pensum (program_uuid, semester_uuid, quantity_classes, amount_to_paid, created_at, updated_at) VALUES (%(program_uuid)s, %(semester_uuid)s, %(quantity_classes)s, %(amount_to_paid)s, %(created_at)s, %(updated_at)s)]\n[parameters: {&#39;program_uuid&#39;: &#39;(#programsId)&#39;, &#39;semester_uuid&#39;: &#39;bec5f57f-4a30-4d75-8922-114cb0832539&#39;, &#39;quantity_classes&#39;: 57, &#39;amount_to_paid&#39;: 33144.0, &#39;created_at&#39;: &#39;2024-03-05 02:16:36&#39;, &#39;updated_at&#39;: None}]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref failed">18</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">21:16:36.739 src/test/java/pensum/post/create_pensum-post.feature:18
+Then status 200
+status code was: 400, expected: 200, response time in milliseconds: 461, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/pensum/, response: 
+{&quot;detail&quot;:&quot;(pymysql.err.OperationalError) (1364, \&quot;Field &#39;uuid_pensum&#39; doesn&#39;t have a default value\&quot;)\n[SQL: INSERT INTO pensum (program_uuid, semester_uuid, quantity_classes, amount_to_paid, created_at, updated_at) VALUES (%(program_uuid)s, %(semester_uuid)s, %(quantity_classes)s, %(amount_to_paid)s, %(created_at)s, %(updated_at)s)]\n[parameters: {&#39;program_uuid&#39;: &#39;(#programsId)&#39;, &#39;semester_uuid&#39;: &#39;bec5f57f-4a30-4d75-8922-114cb0832539&#39;, &#39;quantity_classes&#39;: 57, &#39;amount_to_paid&#39;: 33144.0, &#39;created_at&#39;: &#39;2024-03-05 02:16:36&#39;, &#39;updated_at&#39;: None}]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)&quot;}
+src/test/java/pensum/post/create_pensum-post.feature:18
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref skipped">19</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def pensumId = $.uuid_pensum</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref skipped">20</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print pensumId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

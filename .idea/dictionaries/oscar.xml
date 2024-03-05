@@ -1,8 +1,17 @@
 <component name="ProjectDictionaryState">
   <dictionary name="oscar">
     <words>
+      <w>createadvisors</w>
+      <w>createstudents</w>
+      <w>idcard</w>
       <w>idcardrandom</w>
       <w>patchadvisors</w>
+      <w>randomidcard</w>
+      <w>randomlastname</w>
+      <w>randomname</w>
+      <w>randomnameuser</w>
+      <w>randompassworduser</w>
+      <w>randomphone</w>
       <w>telrandom</w>
     </words>
   </dictionary>

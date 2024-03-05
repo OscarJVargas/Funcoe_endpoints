@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.students.get.students-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-04 03:11:05 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Get a students</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/students/get/students-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get students on request</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Get a students</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3124</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2583</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.students.get.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">2425</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">45</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2355</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">15:11:03.368 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+15:11:05.217 response time in milliseconds: 1847
+1 &lt; 200
+1 &lt; date: Mon, 04 Mar 2024 20:11:04 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 166
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 1210
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY4MzA2NS44MDA4MDgyfQ.tU806Ys4xT8ba_JfdEReHhzSmXYJ0s41PQXOL31ZyWE&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">15:11:05.275 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY4MzA2NS44MDA4MDgyfQ.tU806Ys4xT8ba_JfdEReHhzSmXYJ0s41PQXOL31ZyWE 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/programs/all/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">509</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">15:11:05.277 request:
+2 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/programs/all/
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY4MzA2NS44MDA4MDgyfQ.tU806Ys4xT8ba_JfdEReHhzSmXYJ0s41PQXOL31ZyWE
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+15:11:05.781 response time in milliseconds: 504
+2 &lt; 200
+2 &lt; date: Mon, 04 Mar 2024 20:11:05 GMT
+2 &lt; server: envoy
+2 &lt; content-length: 3886
+2 &lt; content-type: application/json
+2 &lt; x-envoy-upstream-service-time: 247
+[{&quot;uuid_program&quot;:&quot;f37d2f4f-b23f-468e-94d7-800de0712ff9&quot;,&quot;name&quot;:&quot;qjlltysr&quot;,&quot;created_at&quot;:&quot;2024-03-04T19:12:42&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;41e1520c-7fe1-409a-9e84-33e746e2ea05&quot;,&quot;name&quot;:&quot;iotaurqn&quot;,&quot;created_at&quot;:&quot;2024-03-04T19:09:19&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;7b549225-21a3-40ef-b212-e6a29d3c2c0d&quot;,&quot;name&quot;:&quot;fsgedbij&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:59:52&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;5679fb5b-06aa-4b8a-8c5a-b2dd74e475c3&quot;,&quot;name&quot;:&quot;zhiitign&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:57:41&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;ad4d4451-b5bc-4e04-aa57-ff1571f1bcc8&quot;,&quot;name&quot;:&quot;guzvbioj&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:53:22&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;16ea3ea8-bb29-4f52-9751-73675a1d0c4c&quot;,&quot;name&quot;:&quot;fjjgscbb&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:52:55&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;57b705fa-cd2f-44b8-89e2-24d1b6b4784a&quot;,&quot;name&quot;:&quot;hwecnqwv&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:50:08&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;9891ea0f-a3f7-42e9-9f89-7d3f8d0a4a3e&quot;,&quot;name&quot;:&quot;dotxgzrt&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:46:43&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;8fe5ad62-bacc-4101-9d28-6a5ba3b19edb&quot;,&quot;name&quot;:&quot;ebpiwhmk&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:46:21&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;f532bc44-637f-48c7-b2ac-b66bb24e633a&quot;,&quot;name&quot;:&quot;xappnmkn&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:45:42&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;df09dc87-10de-4c3e-98fa-c11eabb51a56&quot;,&quot;name&quot;:&quot;llmrxxro&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:39:22&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;5521e0db-cea0-4141-82cb-e8592d55a782&quot;,&quot;name&quot;:&quot;rxwvzcfi&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:38:51&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;de8295b0-4f91-486c-a396-8330aacffe9e&quot;,&quot;name&quot;:&quot;ifsfvhew&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:37:31&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;1debbf8b-a1e9-49d5-845a-0a53233b7e70&quot;,&quot;name&quot;:&quot;string&quot;,&quot;created_at&quot;:&quot;2024-03-04T18:31:53&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;9a054a72-1978-4a91-9c3b-b847f34a13c3&quot;,&quot;name&quot;:&quot;string&quot;,&quot;created_at&quot;:&quot;2024-02-27T00:58:32&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;a35da5f8-14b2-4efd-aff1-72c8061fb569&quot;,&quot;name&quot;:&quot;Open english&quot;,&quot;created_at&quot;:&quot;2024-02-24T21:37:21&quot;,&quot;updated_at&quot;:&quot;2024-02-24T21:42:37&quot;},{&quot;uuid_program&quot;:&quot;152e3ed7-e0d3-485b-98f4-d21594d6e45a&quot;,&quot;name&quot;:&quot;Atletismo&quot;,&quot;created_at&quot;:&quot;2024-02-24T21:34:29&quot;,&quot;updated_at&quot;:&quot;2024-02-24T21:35:44&quot;},{&quot;uuid_program&quot;:&quot;01b93fb9-239b-4dd1-be58-ed2baabad6e8&quot;,&quot;name&quot;:&quot;T.L EN AUXILIAR EN ARCHIVO Y REGISTRO&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;d0009c1a-7133-43fd-94ab-eb7b23238a47&quot;,&quot;name&quot;:&quot;DIPLOMADO PEDAGOGIA INFANTIL E INCLUSION EDUCATIVA&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;bcbb1572-e94b-4814-a51c-cc98c2bc1a91&quot;,&quot;name&quot;:&quot;T.L.C EN PELUQUERO ESTILISTA&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;b9549ea3-d97f-4b14-8743-ff35ce110d6e&quot;,&quot;name&quot;:&quot;T.L. EN AUXILIAR ADMINISTRATIVO&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;b082395a-50c6-48e9-a18d-0795d18c0478&quot;,&quot;name&quot;:&quot;T.L ATENCION A LA PRIMERA INFANCIA&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;9be16852-26e0-4292-9c6d-dfd4b54089ff&quot;,&quot;name&quot;:&quot;CURSO DE INFORMATICA BASICA&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;41af9794-ac9e-4cf7-aa6e-f02498b36f42&quot;,&quot;name&quot;:&quot;T.L. EN AUXILIAR CONTABLE Y FINANCIERO&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;46248c20-9bc6-4ea7-acb6-0a6926858bb3&quot;,&quot;name&quot;:&quot;T.L EN AUXILIAR EN SECRETARIO(A) EJECUTIVO&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;7d7749a3-563c-497e-9ff3-83c7b9ee8d65&quot;,&quot;name&quot;:&quot;CURSO DE INFORMATICA AVANZADA&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;46a80909-bb38-4fb8-9e67-d0a715d939de&quot;,&quot;name&quot;:&quot;T.L ATENCION A LA PRIMERA INFANCIA&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null},{&quot;uuid_program&quot;:&quot;50ae87d2-09de-4a87-aeca-a4236d9a602b&quot;,&quot;name&quot;:&quot;T.L EN MERCADERISTA E IMPULSADOR&quot;,&quot;created_at&quot;:&quot;2024-02-17T14:45:09&quot;,&quot;updated_at&quot;:null}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

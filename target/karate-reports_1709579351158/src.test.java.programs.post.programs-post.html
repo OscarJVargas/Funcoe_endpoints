@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.programs.post.programs-post</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-04 02:08:56 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:10]"><span>[1:10]</span> <span>Post on programs</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/programs/post/programs-post.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Post programs on request</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:10]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">createprograms</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:10]</span>
+                <span class="scenario-name">Post on programs</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2578</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:10]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2578</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">14:08:56.884 src/test/java/programs/post/programs-post.feature:4
+* call read(&quot;../../user/token/users-token-post.feature@token&quot;)
+status code was: 500, expected: 200, response time in milliseconds: 1093, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/, response: 
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, &#39;Lost connection to MySQL server during query&#39;)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 299, in app
+    raise e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 294, in app
+    raw_response = await run_endpoint_function(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/concurrency.py&quot;, line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/to_thread.py&quot;, line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 2134, in run_sync_in_worker_thread
+    return await future
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 851, in run
+    result = context.run(func, *args)
+  File &quot;/workspace/app/routes/user.py&quot;, line 19, in get_token
+    if validate_user(user):
+  File &quot;/workspace/app/func/user.py&quot;, line 22, in validate_user
+    id_user = get_uuid_user(data.user)
+  File &quot;/workspace/app/func/user.py&quot;, line 37, in get_uuid_user
+    r1=db.query(user_model).where(user_model.user==user).one()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2798, in one
+    return self._iter().one()  # type: ignore
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2308, in execute
+    return self._execute_internal(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/context.py&quot;, line 293, in orm_execute_statement
+    result = conn.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1416, in execute
+    return meth(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/sql/elements.py&quot;, line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1848, in _execute_context
+    return self._exec_single_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, &#39;Lost connection to MySQL server during query&#39;)
+[SQL: SELECT users.uuid_user AS users_uuid_user, users.user AS users_user, users.password AS users_password, users.rol_uuid AS users_rol_uuid, users.is_active AS users_is_active, users.last_connection AS users_last_connection, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.user = %(user_1)s]
+[parameters: {&#39;user_1&#39;: &#39;ruben1&#39;}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+src/test/java/programs/post/../../user/token/users-token-post.feature:9
+src/test/java/programs/post/programs-post.feature:4
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.programs.post.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">2164</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">117</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2031</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">14:08:55.768 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+14:08:56.864 response time in milliseconds: 1093
+1 &lt; 500
+1 &lt; date: Mon, 04 Mar 2024 19:08:56 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 9403
+1 &lt; content-type: text/plain; charset=utf-8
+1 &lt; x-envoy-upstream-service-time: 6
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, &#39;Lost connection to MySQL server during query&#39;)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 299, in app
+    raise e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 294, in app
+    raw_response = await run_endpoint_function(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/concurrency.py&quot;, line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/to_thread.py&quot;, line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 2134, in run_sync_in_worker_thread
+    return await future
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 851, in run
+    result = context.run(func, *args)
+  File &quot;/workspace/app/routes/user.py&quot;, line 19, in get_token
+    if validate_user(user):
+  File &quot;/workspace/app/func/user.py&quot;, line 22, in validate_user
+    id_user = get_uuid_user(data.user)
+  File &quot;/workspace/app/func/user.py&quot;, line 37, in get_uuid_user
+    r1=db.query(user_model).where(user_model.user==user).one()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2798, in one
+    return self._iter().one()  # type: ignore
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2308, in execute
+    return self._execute_internal(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/context.py&quot;, line 293, in orm_execute_statement
+    result = conn.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1416, in execute
+    return meth(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/sql/elements.py&quot;, line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1848, in _execute_context
+    return self._exec_single_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, &#39;Lost connection to MySQL server during query&#39;)
+[SQL: SELECT users.uuid_user AS users_uuid_user, users.user AS users_user, users.password AS users_password, users.rol_uuid AS users_rol_uuid, users.is_active AS users_is_active, users.last_connection AS users_last_connection, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.user = %(user_1)s]
+[parameters: {&#39;user_1&#39;: &#39;ruben1&#39;}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.9">14:08:56.880 src/test/java/programs/post/../../user/token/users-token-post.feature:9
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 1093, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/, response: 
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, &#39;Lost connection to MySQL server during query&#39;)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 299, in app
+    raise e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 294, in app
+    raw_response = await run_endpoint_function(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/concurrency.py&quot;, line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/to_thread.py&quot;, line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 2134, in run_sync_in_worker_thread
+    return await future
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 851, in run
+    result = context.run(func, *args)
+  File &quot;/workspace/app/routes/user.py&quot;, line 19, in get_token
+    if validate_user(user):
+  File &quot;/workspace/app/func/user.py&quot;, line 22, in validate_user
+    id_user = get_uuid_user(data.user)
+  File &quot;/workspace/app/func/user.py&quot;, line 37, in get_uuid_user
+    r1=db.query(user_model).where(user_model.user==user).one()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2798, in one
+    return self._iter().one()  # type: ignore
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2308, in execute
+    return self._execute_internal(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/context.py&quot;, line 293, in orm_execute_statement
+    result = conn.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1416, in execute
+    return meth(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/sql/elements.py&quot;, line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1848, in _execute_context
+    return self._exec_single_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, &#39;Lost connection to MySQL server during query&#39;)
+[SQL: SELECT users.uuid_user AS users_uuid_user, users.user AS users_user, users.password AS users_password, users.rol_uuid AS users_rol_uuid, users.is_active AS users_is_active, users.last_connection AS users_last_connection, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.user = %(user_1)s]
+[parameters: {&#39;user_1&#39;: &#39;ruben1&#39;}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+src/test/java/programs/post/../../user/token/users-token-post.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:10]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref skipped">11</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def generateRandomName =</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.11">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomName = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomName += chars.charAt(randomIndex);
+    }
+    return randomName;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref skipped">23</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def randomname = generateRandomName()</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref skipped">25</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/programs/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref skipped">26</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request {&quot;name&quot;: &#39;#(randomname)&#39; }</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref skipped">29</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def programsId = $.uuid_program</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref skipped">30</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print programsId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

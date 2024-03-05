@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.blood_type.blood_type_all</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-04 05:27:02 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get all blood_type</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/blood_type/blood_type_all.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get all blood_type on request</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">alldays</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Get all blood_type</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>4858</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3501</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.blood_type.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">3310</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">47</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3233</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.8">17:26:58.679 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+17:27:01.474 response time in milliseconds: 2792
+1 &lt; 200
+1 &lt; date: Mon, 04 Mar 2024 22:26:59 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 162
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 2280
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5MTIyMi4zMTA4fQ.1earqGLU7xzob251mCWLAA4wrKJLx5CY630RTbECRws&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot;  + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/blood_type/all/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1344</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">17:27:01.522 request:
+2 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/blood_type/all/
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5MTIyMi4zMTA4fQ.1earqGLU7xzob251mCWLAA4wrKJLx5CY630RTbECRws
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+17:27:01.847 request:
+3 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/blood_type/all/
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5MTIyMi4zMTA4fQ.1earqGLU7xzob251mCWLAA4wrKJLx5CY630RTbECRws
+3 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+17:27:02.041 request:
+4 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/blood_type/all/
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcwOTY5MTIyMi4zMTA4fQ.1earqGLU7xzob251mCWLAA4wrKJLx5CY630RTbECRws
+4 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+17:27:02.862 response time in milliseconds: 820
+4 &lt; 500
+4 &lt; date: Mon, 04 Mar 2024 22:27:02 GMT
+4 &lt; server: envoy
+4 &lt; content-length: 2600
+4 &lt; content-type: text/plain; charset=utf-8
+4 &lt; x-envoy-upstream-service-time: 733
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 315, in app
+    content = await serialize_response(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {&#39;type&#39;: &#39;model_attributes_type&#39;, &#39;loc&#39;: (&#39;response&#39;,), &#39;msg&#39;: &#39;Input should be a valid dictionary or object to extract fields from&#39;, &#39;input&#39;: None, &#39;url&#39;: &#39;https://errors.pydantic.dev/2.5/v/model_attributes_type&#39;}
+
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">17:27:02.866 src/test/java/blood_type/blood_type_all.feature:11
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 820, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/blood_type/all/, response: 
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 315, in app
+    content = await serialize_response(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 155, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {&#39;type&#39;: &#39;model_attributes_type&#39;, &#39;loc&#39;: (&#39;response&#39;,), &#39;msg&#39;: &#39;Input should be a valid dictionary or object to extract fields from&#39;, &#39;input&#39;: None, &#39;url&#39;: &#39;https://errors.pydantic.dev/2.5/v/model_attributes_type&#39;}
+
+
+src/test/java/blood_type/blood_type_all.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
