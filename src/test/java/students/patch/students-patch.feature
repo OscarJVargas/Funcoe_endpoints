@@ -9,7 +9,7 @@ Feature: Patch programs on request
 
   @updateprograms
   Scenario: Patch a programsId
-    Given url 'https://funcoeback-dev-ceqh.3.us-1.fl0.io/programs/'   + programsId + '/'
+    Given url 'https://funcoeback-dev-ceqh.3.us-1.fl0.io/programs/'   + programsId
     And request {"name": '#(randomname)' }
     When method patch
     Then status 200

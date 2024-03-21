@@ -7,7 +7,7 @@ Feature: Get advisors on request
 
 
   Scenario: Get a advisors
-    Given url "https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/all"
+    Given url "https://funcoeback-dev-ceqh.3.us-1.fl0.io/advisors/all/"
     When method get
     Then status 200
 

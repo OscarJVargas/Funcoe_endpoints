@@ -1,0 +1,2510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.teachers.patch.teacher-patch</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-20 10:22:18 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Patch a programsId</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:20]"><span>[2:20]</span> <span>Patch a programsId</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/teachers/patch/teacher-patch.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Patch programs on request</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">updateteachertotal</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Patch a programsId</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1453</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell failed">1453</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:22:13.672 src/test/java/teachers/patch/teacher-patch.feature:4
+* call read(&quot;../../user/token/users-token-post.feature@token&quot;)
+status code was: 500, expected: 200, response time in milliseconds: 713, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/, response: 
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, &#39;Lost connection to MySQL server during query&#39;)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/cors.py&quot;, line 83, in __call__
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 299, in app
+    raise e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 294, in app
+    raw_response = await run_endpoint_function(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/concurrency.py&quot;, line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/to_thread.py&quot;, line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 2134, in run_sync_in_worker_thread
+    return await future
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 851, in run
+    result = context.run(func, *args)
+  File &quot;/workspace/app/routes/user.py&quot;, line 19, in get_token
+    if validate_user(user):
+  File &quot;/workspace/app/func/user.py&quot;, line 22, in validate_user
+    id_user = get_uuid_user(data.user)
+  File &quot;/workspace/app/func/user.py&quot;, line 37, in get_uuid_user
+    r1=db.query(user_model).where(user_model.user==user).one()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2798, in one
+    return self._iter().one()  # type: ignore
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2308, in execute
+    return self._execute_internal(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/context.py&quot;, line 293, in orm_execute_statement
+    result = conn.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1416, in execute
+    return meth(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/sql/elements.py&quot;, line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1848, in _execute_context
+    return self._exec_single_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, &#39;Lost connection to MySQL server during query&#39;)
+[SQL: SELECT users.uuid_user AS users_uuid_user, users.user AS users_user, users.password AS users_password, users.rol_uuid AS users_rol_uuid, users.is_active AS users_is_active, users.last_connection AS users_last_connection, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.user = %(user_1)s]
+[parameters: {&#39;user_1&#39;: &#39;ruben1&#39;}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+src/test/java/teachers/patch/../../user/token/users-token-post.feature:9
+src/test/java/teachers/patch/teacher-patch.feature:4
+</div>   
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.teachers.patch.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">1241</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">81</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1154</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">22:22:12.948 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+22:22:13.663 response time in milliseconds: 713
+1 &lt; 500
+1 &lt; date: Thu, 21 Mar 2024 03:22:13 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 9580
+1 &lt; content-type: text/plain; charset=utf-8
+1 &lt; x-envoy-upstream-service-time: 5
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, &#39;Lost connection to MySQL server during query&#39;)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/cors.py&quot;, line 83, in __call__
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 299, in app
+    raise e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 294, in app
+    raw_response = await run_endpoint_function(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/concurrency.py&quot;, line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/to_thread.py&quot;, line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 2134, in run_sync_in_worker_thread
+    return await future
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 851, in run
+    result = context.run(func, *args)
+  File &quot;/workspace/app/routes/user.py&quot;, line 19, in get_token
+    if validate_user(user):
+  File &quot;/workspace/app/func/user.py&quot;, line 22, in validate_user
+    id_user = get_uuid_user(data.user)
+  File &quot;/workspace/app/func/user.py&quot;, line 37, in get_uuid_user
+    r1=db.query(user_model).where(user_model.user==user).one()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2798, in one
+    return self._iter().one()  # type: ignore
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2308, in execute
+    return self._execute_internal(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/context.py&quot;, line 293, in orm_execute_statement
+    result = conn.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1416, in execute
+    return meth(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/sql/elements.py&quot;, line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1848, in _execute_context
+    return self._exec_single_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, &#39;Lost connection to MySQL server during query&#39;)
+[SQL: SELECT users.uuid_user AS users_uuid_user, users.user AS users_user, users.password AS users_password, users.rol_uuid AS users_rol_uuid, users.is_active AS users_is_active, users.last_connection AS users_last_connection, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.user = %(user_1)s]
+[parameters: {&#39;user_1&#39;: &#39;ruben1&#39;}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.9">22:22:13.670 src/test/java/teachers/patch/../../user/token/users-token-post.feature:9
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 713, url: https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/, response: 
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, &#39;Lost connection to MySQL server during query&#39;)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/errors.py&quot;, line 164, in __call__
+    await self.app(scope, receive, _send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/cors.py&quot;, line 83, in __call__
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/middleware/exceptions.py&quot;, line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 762, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 782, in app
+    await route.handle(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 297, in handle
+    await self.app(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 64, in wrapped_app
+    raise exc
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/_exception_handler.py&quot;, line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/routing.py&quot;, line 72, in app
+    response = await func(request)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 299, in app
+    raise e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 294, in app
+    raw_response = await run_endpoint_function(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/fastapi/routing.py&quot;, line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/starlette/concurrency.py&quot;, line 40, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/to_thread.py&quot;, line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 2134, in run_sync_in_worker_thread
+    return await future
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/anyio/_backends/_asyncio.py&quot;, line 851, in run
+    result = context.run(func, *args)
+  File &quot;/workspace/app/routes/user.py&quot;, line 19, in get_token
+    if validate_user(user):
+  File &quot;/workspace/app/func/user.py&quot;, line 22, in validate_user
+    id_user = get_uuid_user(data.user)
+  File &quot;/workspace/app/func/user.py&quot;, line 37, in get_uuid_user
+    r1=db.query(user_model).where(user_model.user==user).one()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2798, in one
+    return self._iter().one()  # type: ignore
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/query.py&quot;, line 2847, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2308, in execute
+    return self._execute_internal(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/session.py&quot;, line 2190, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/orm/context.py&quot;, line 293, in orm_execute_statement
+    result = conn.execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1416, in execute
+    return meth(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/sql/elements.py&quot;, line 517, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1848, in _execute_context
+    return self._exec_single_context(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 2344, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/base.py&quot;, line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/sqlalchemy/engine/default.py&quot;, line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 153, in execute
+    result = self._query(query)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/cursors.py&quot;, line 322, in _query
+    conn.query(q)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 558, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 822, in _read_query_result
+    result.read()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 1200, in read
+    first_packet = self.connection._read_packet()
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 739, in _read_packet
+    packet_header = self._read_bytes(4)
+  File &quot;/layers/paketo-buildpacks_pip-install/packages/lib/python3.10/site-packages/pymysql/connections.py&quot;, line 795, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, &#39;Lost connection to MySQL server during query&#39;)
+[SQL: SELECT users.uuid_user AS users_uuid_user, users.user AS users_user, users.password AS users_password, users.rol_uuid AS users_rol_uuid, users.is_active AS users_is_active, users.last_connection AS users_last_connection, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.user = %(user_1)s]
+[parameters: {&#39;user_1&#39;: &#39;ruben1&#39;}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+src/test/java/teachers/patch/../../user/token/users-token-post.feature:9
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>call read(&quot;../post/teacher-post.feature@createteachers&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref skipped">12</div>
+      
+      <div class="step-cell skipped">
+        <span>Given</span>&nbsp;<span>url &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/teachers/uuid_teacher?uuid=&#39; + teacherId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref skipped">13</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print teacherId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref skipped">14</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>request {&quot;first_name&quot;: &#39;#(randomname)&#39;,  &quot;last_name&quot;: &#39;#(randomlastname)&#39;, &quot;phone&quot;: &#39;#(randomphone)&#39;,  &quot;program_uuid&quot;: &quot;50ae87d2-09de-4a87-aeca-a4236d9a602b&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref skipped">15</div>
+      
+      <div class="step-cell skipped">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref skipped">16</div>
+      
+      <div class="step-cell skipped">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref skipped">17</div>
+      
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>print &quot;El Registro Se Actualizo De Forma Exitosa &quot; + teacherId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">updateteachername</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:20]</span>
+                <span class="scenario-name">Patch a programsId</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>5053</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:20]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2062</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.teachers.patch.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">2055</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2032</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.8">22:22:13.689 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+22:22:15.719 response time in milliseconds: 2030
+1 &lt; 200
+1 &lt; date: Thu, 21 Mar 2024 03:22:13 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 164
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 1769
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA5MTMzNi4xMDYzOTZ9.3LYSJuTf_IMT8jrSbokSLNdFdyOSvgiisW0i0Dl_eF0&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">22</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">22:22:15.766 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA5MTMzNi4xMDYzOTZ9.3LYSJuTf_IMT8jrSbokSLNdFdyOSvgiisW0i0Dl_eF0 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:20]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../post/teacher-post.feature@createteachers&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2076</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.7.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.teachers.patch.post.teacher-post</div>
+      </div>
+      <div class="time-cell passed">2054</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../../user/token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1006</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row" data-parent="0.7.0.call">
+      <div class="step-container" id="0.7.0.call.0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.teachers.patch.user.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">1001</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1000</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.4.0.call.0.8">22:22:15.780 request:
+2 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA5MTMzNi4xMDYzOTZ9.3LYSJuTf_IMT8jrSbokSLNdFdyOSvgiisW0i0Dl_eF0
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 39
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+22:22:16.777 response time in milliseconds: 997
+2 &lt; 200
+2 &lt; date: Thu, 21 Mar 2024 03:22:15 GMT
+2 &lt; server: envoy
+2 &lt; content-length: 166
+2 &lt; content-type: application/json
+2 &lt; x-envoy-upstream-service-time: 724
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA5MTMzNy4xNjYxNDk2fQ.qA271_vEdiuPfpfwK3sgIQpitaBIIekJgALDPburdfk&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call.0.4.0.call">
+    <div class="step-container" id="0.7.0.call.0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.5">
+      <div class="step-ref bg-step">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.6">22:22:16.780 [print] eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA5MTMzNy4xNjYxNDk2fQ.qA271_vEdiuPfpfwK3sgIQpitaBIIekJgALDPburdfk 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomidcard = &quot; &#39; &quot; + Math.floor(Math.random() * 1000000000000) + 1 + &quot; &#39; &quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomphone = &quot; +57 &quot; + Math.floor(Math.random() * 1000000000) + 1 + &quot; &#39; &quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomMail =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">19</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.13">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomMail = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomMail += chars.charAt(randomIndex);
+    }
+    return randomMail;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.26">
+      <div class="step-ref bg-step">26</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomMail = generateRandomMail() + &quot;@gmail.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.27">
+      <div class="step-ref bg-step">27</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomName =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.27">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomName = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomName += chars.charAt(randomIndex);
+    }
+    return randomName;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.39">
+      <div class="step-ref bg-step">39</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomname = generateRandomName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.41">
+      <div class="step-ref bg-step">41</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomLastName =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.41">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomlastname = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomlastname += chars.charAt(randomIndex);
+    }
+    return randomlastname;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.53">
+      <div class="step-ref bg-step">53</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomlastname = generateRandomLastName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.54">
+      <div class="step-ref bg-step">54</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomName =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.54">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomName = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomName += chars.charAt(randomIndex);
+    }
+    return randomName;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.67">
+      <div class="step-ref bg-step">67</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomnameuser = generateRandomName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.69">
+      <div class="step-ref bg-step">69</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomPassword =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.7.0.call.0.69">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz1234567890#$%&amp;/():;,!&#39;;
+    var randomPassword = &#39;&#39;;
+    for (var i = 0; i &lt; 10; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomPassword += chars.charAt(randomIndex);
+    }
+    return randomPassword;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.81">
+      <div class="step-ref bg-step">81</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randompassworduser = generateRandomPassword()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.82">
+      <div class="step-ref bg-step">82</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/teachers/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.83">
+      <div class="step-ref bg-step">83</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;document_type_uuid&quot;: &quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;, &quot;identification_card&quot;: &#39;#(randomidcard)&#39;, &quot;first_name&quot;: &#39;#(randomname)&#39;,  &quot;last_name&quot;: &#39;#(randomlastname)&#39;,  &quot;blood_type_uuid&quot;: &quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,  &quot;gender_uuid&quot;: &quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,  &quot;phone&quot;: &#39;#(randomphone)&#39;,  &quot;user&quot;: &#39;#(randomnameuser)&#39;,  &quot;password&quot;: &#39;#(randompassworduser)&#39;, &quot;program_uuid&quot;: &quot;50ae87d2-09de-4a87-aeca-a4236d9a602b&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.84">
+      <div class="step-ref bg-step">84</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">975</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.84">22:22:16.847 request:
+3 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/teachers/
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA5MTMzNy4xNjYxNDk2fQ.qA271_vEdiuPfpfwK3sgIQpitaBIIekJgALDPburdfk
+3 &gt; Content-Type: application/json; charset=UTF-8
+3 &gt; Content-Length: 387
+3 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+3 &gt; Accept-Encoding: gzip,deflate
+{&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 8306267405531 &#39; &quot;,&quot;first_name&quot;:&quot;rmjpnsky&quot;,&quot;last_name&quot;:&quot;qmcrkujb&quot;,&quot;blood_type_uuid&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;phone&quot;:&quot; +57 7993539181 &#39; &quot;,&quot;user&quot;:&quot;fqgieqru&quot;,&quot;password&quot;:&quot;%:xmal0)cd&quot;,&quot;program_uuid&quot;:&quot;50ae87d2-09de-4a87-aeca-a4236d9a602b&quot;}
+
+22:22:17.819 response time in milliseconds: 972
+3 &lt; 200
+3 &lt; date: Thu, 21 Mar 2024 03:22:16 GMT
+3 &lt; server: envoy
+3 &lt; content-length: 517
+3 &lt; content-type: application/json
+3 &lt; x-envoy-upstream-service-time: 726
+{&quot;uuid_teacher&quot;:&quot;be4279a9-38be-47c4-ab3c-624bb18755a6&quot;,&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 8306267405531 &#39; &quot;,&quot;first_name&quot;:&quot;rmjpnsky&quot;,&quot;last_name&quot;:&quot;qmcrkujb&quot;,&quot;blood_type_uuid&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;phone&quot;:&quot; +57 7993539181 &#39; &quot;,&quot;user&quot;:&quot;fqgieqru&quot;,&quot;password&quot;:&quot;%:xmal0)cd&quot;,&quot;created_at&quot;:&quot;2024-03-21T03:22:17&quot;,&quot;last_connection&quot;:null,&quot;program_uuid&quot;:&quot;50ae87d2-09de-4a87-aeca-a4236d9a602b&quot;,&quot;updated_at&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.85">
+      <div class="step-ref bg-step">85</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.86">
+      <div class="step-ref bg-step">86</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def teacherId = $.uuid_teacher</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.87">
+      <div class="step-ref bg-step">87</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot; se a creado la identificacion del profesor # &quot; + teacherId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.87">22:22:17.821 [print]  se a creado la identificacion del profesor # be4279a9-38be-47c4-ab3c-624bb18755a6 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.88">
+      <div class="step-ref bg-step">88</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def idcard = $.identification_card</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.89">
+      <div class="step-ref bg-step">89</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot; la cedula del profesor es la # &quot; + idcard</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.89">22:22:17.822 [print]  la cedula del profesor es la #  &#39; 8306267405531 &#39;  
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.90">
+      <div class="step-ref bg-step">90</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def teacher_name = $.first_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.91">
+      <div class="step-ref bg-step">91</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def teacher_last_name = $.last_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.7.0.call">
+    <div class="step-container" id="0.7.0.call.0.92">
+      <div class="step-ref bg-step">92</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &quot;el nombre completo del teacher es &quot; + teacher_name + &quot; &quot; + teacher_last_name</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7.0.call.0.92">22:22:17.828 [print] el nombre completo del teacher es rmjpnsky qmcrkujb 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def generateRandomName =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.21">function() {
+    var chars = &#39;abcdefghijklmnopqrstuvwxyz&#39;;
+    var randomName = &#39;&#39;;
+    for (var i = 0; i &lt; 8; i++) {
+        var randomIndex = Math.floor(Math.random() * chars.length);
+        randomName += chars.charAt(randomIndex);
+    }
+    return randomName;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def randomname = generateRandomName()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://funcoeback-dev-ceqh.3.us-1.fl0.io/teachers/uuid_teacher?uuid=&#39; + teacherId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print teacherId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.35">22:22:17.844 [print] be4279a9-38be-47c4-ab3c-624bb18755a6 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;first_name&quot;: &#39;#(randomname)&#39;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method patch</span>
+      </div>
+    </div>
+    <div class="time-cell passed">886</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">22:22:17.847 request:
+4 &gt; PATCH https://funcoeback-dev-ceqh.3.us-1.fl0.io/teachers/uuid_teacher?uuid=be4279a9-38be-47c4-ab3c-624bb18755a6
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA5MTMzNy4xNjYxNDk2fQ.qA271_vEdiuPfpfwK3sgIQpitaBIIekJgALDPburdfk
+4 &gt; Content-Type: application/json; charset=UTF-8
+4 &gt; Content-Length: 25
+4 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+4 &gt; Accept-Encoding: gzip,deflate
+{&quot;first_name&quot;:&quot;ioatjiwg&quot;}
+
+22:22:18.731 response time in milliseconds: 883
+4 &lt; 200
+4 &lt; date: Thu, 21 Mar 2024 03:22:17 GMT
+4 &lt; server: envoy
+4 &lt; content-length: 534
+4 &lt; content-type: application/json
+4 &lt; x-envoy-upstream-service-time: 568
+{&quot;uuid_teacher&quot;:&quot;be4279a9-38be-47c4-ab3c-624bb18755a6&quot;,&quot;document_type_uuid&quot;:&quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,&quot;identification_card&quot;:&quot; &#39; 8306267405531 &#39; &quot;,&quot;first_name&quot;:&quot;ioatjiwg&quot;,&quot;last_name&quot;:&quot;qmcrkujb&quot;,&quot;blood_type_uuid&quot;:&quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,&quot;gender_uuid&quot;:&quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,&quot;phone&quot;:&quot; +57 7993539181 &#39; &quot;,&quot;user&quot;:&quot;fqgieqru&quot;,&quot;password&quot;:&quot;%:xmal0)cd&quot;,&quot;created_at&quot;:&quot;2024-03-21T03:22:17&quot;,&quot;last_connection&quot;:null,&quot;program_uuid&quot;:&quot;50ae87d2-09de-4a87-aeca-a4236d9a602b&quot;,&quot;updated_at&quot;:&quot;2024-03-21T03:22:18&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print &quot;El Registro Se Actualizo De Forma Exitosa &quot; + teacherId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.39">22:22:18.732 [print] El Registro Se Actualizo De Forma Exitosa be4279a9-38be-47c4-ab3c-624bb18755a6 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>def responseJson = response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseJson</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.41">22:22:18.734 [print] {
+  &quot;uuid_teacher&quot;: &quot;be4279a9-38be-47c4-ab3c-624bb18755a6&quot;,
+  &quot;document_type_uuid&quot;: &quot;09359aab-7354-47c0-ae6b-60d71aea3f08&quot;,
+  &quot;identification_card&quot;: &quot; &#39; 8306267405531 &#39; &quot;,
+  &quot;first_name&quot;: &quot;ioatjiwg&quot;,
+  &quot;last_name&quot;: &quot;qmcrkujb&quot;,
+  &quot;blood_type_uuid&quot;: &quot;6f454a83-4201-44e3-b7cf-99ba07464519&quot;,
+  &quot;gender_uuid&quot;: &quot;20be8f69-c198-467c-89be-ee18a7af8b9b&quot;,
+  &quot;phone&quot;: &quot; +57 7993539181 &#39; &quot;,
+  &quot;user&quot;: &quot;fqgieqru&quot;,
+  &quot;password&quot;: &quot;%:xmal0)cd&quot;,
+  &quot;created_at&quot;: &quot;2024-03-21T03:22:17&quot;,
+  &quot;last_connection&quot;: null,
+  &quot;program_uuid&quot;: &quot;50ae87d2-09de-4a87-aeca-a4236d9a602b&quot;,
+  &quot;updated_at&quot;: &quot;2024-03-21T03:22:18&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

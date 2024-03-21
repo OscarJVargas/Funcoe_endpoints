@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+      posthog.register_once({
+        karate_version:"1.2.0.RC5"
+      });
+      posthog.capture('report_feature');
+    </script>    
+    <title>src.test.java.user.get.users-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-03-20 07:52:25 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get all user</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/user/get/users-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get all user on request</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Get all user</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3208</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>call read(&quot;../token/users-token-post.feature@token&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2406</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.5.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">src.test.java.user.get.token.users-token-post</div>
+      </div>
+      <div class="time-cell passed">2169</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.6">
+      <div class="step-ref bg-step">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.7">
+      <div class="step-ref bg-step">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;user&quot;: &quot;ruben1&quot;, &quot;password&quot;: &quot;ruben123&quot;}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.8">
+      <div class="step-ref bg-step">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2073</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5.0.call.0.8">19:52:23.357 request:
+1 &gt; POST https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/token/
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 39
+1 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;ruben123&quot;}
+
+19:52:24.814 response time in milliseconds: 1454
+1 &lt; 200
+1 &lt; date: Thu, 21 Mar 2024 00:52:23 GMT
+1 &lt; server: envoy
+1 &lt; content-length: 164
+1 &lt; content-type: application/json
+1 &lt; x-envoy-upstream-service-time: 727
+{&quot;access_token&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA4MjM0NC45Mjg4MTR9.S6_jpquWqrvmZABncahzeBt9c0GlYQiWcdKEvPYUb1E&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.5.0.call">
+    <div class="step-container" id="0.5.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def token = $.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &quot;Bearer &quot;  + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">790</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">19:52:24.858 request:
+2 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA4MjM0NC45Mjg4MTR9.S6_jpquWqrvmZABncahzeBt9c0GlYQiWcdKEvPYUb1E
+2 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+19:52:25.138 request:
+3 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA4MjM0NC45Mjg4MTR9.S6_jpquWqrvmZABncahzeBt9c0GlYQiWcdKEvPYUb1E
+3 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+19:52:25.300 request:
+4 &gt; GET https://funcoeback-dev-ceqh.3.us-1.fl0.io/users/all
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoicnViZW4xIiwiZXhwaXJlcyI6MTcxMTA4MjM0NC45Mjg4MTR9.S6_jpquWqrvmZABncahzeBt9c0GlYQiWcdKEvPYUb1E
+4 &gt; Host: funcoeback-dev-ceqh.3.us-1.fl0.io
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.2)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+19:52:25.634 response time in milliseconds: 334
+4 &lt; 200
+4 &lt; date: Thu, 21 Mar 2024 00:52:24 GMT
+4 &lt; server: envoy
+4 &lt; content-length: 7892
+4 &lt; content-type: application/json
+4 &lt; x-envoy-upstream-service-time: 244
+[{&quot;uuid_user&quot;:&quot;26d0d127-8ce7-41d0-9311-12c2c7c68bfa&quot;,&quot;user&quot;:&quot;uhqhwfub&quot;,&quot;password&quot;:&quot;cyYzLHFvZGdiaQ==&quot;,&quot;rol_uuid&quot;:&quot;9c870c9a-42a8-4863-ab5f-c4deb12a85bf&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-21T00:48:32&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;35af4511-1888-4fba-ad59-58628c8478c4&quot;,&quot;user&quot;:&quot;codsmgpi&quot;,&quot;password&quot;:&quot;JHkoaG41KDJiZQ==&quot;,&quot;rol_uuid&quot;:&quot;a7e29660-e27e-4414-9700-3e8f01c487d3&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-06T02:54:40&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;4f61ccf4-4a7e-4be9-8e34-5e384f2c600b&quot;,&quot;user&quot;:&quot;Miracle_Koelpin57&quot;,&quot;password&quot;:&quot;eXlyY3hCZFJqNEZfTFFJ&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:35:35&quot;,&quot;updated_at&quot;:&quot;2024-03-05T19:30:52&quot;,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;079b8fe3-bda8-47f0-aa96-38078ada31aa&quot;,&quot;user&quot;:&quot;Sean.Hyatt&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:false,&quot;created_at&quot;:&quot;2024-03-05T18:35:14&quot;,&quot;updated_at&quot;:&quot;2024-03-05T19:19:42&quot;,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;8b199b5c-74c0-46f3-af87-2f94532b3ba3&quot;,&quot;user&quot;:&quot;Derek_Raynor9&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:35:08&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;0eb56a1d-5ada-4460-abdf-4309b413f72b&quot;,&quot;user&quot;:&quot;Retha65&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:34:14&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;beee3c6c-24f6-4988-bbaf-49221344a1ba&quot;,&quot;user&quot;:&quot;Russel17&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:34:06&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;6a0c36fc-ce09-4457-b471-83679075e59c&quot;,&quot;user&quot;:&quot;Keyon.Muller79&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:32:53&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;945c3a30-2fbb-48b4-b7cc-32a18dd96ddf&quot;,&quot;user&quot;:&quot;osjwwqaoa&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:30:15&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;212264cb-a9d3-4b63-9740-e556efc2a5c3&quot;,&quot;user&quot;:&quot;osjwwqao&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:13:11&quot;,&quot;updated_at&quot;:&quot;2024-03-05T18:19:03&quot;,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;4b0d1ef7-71c1-453d-a10f-36ff9a9bb9bb&quot;,&quot;user&quot;:&quot;osjao&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T18:12:55&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;56c41927-fa87-4f15-9539-9c9b765f2c82&quot;,&quot;user&quot;:&quot;osjaqao&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMzYQ==&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T16:58:48&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;38b45122-c31e-452f-bc05-137309230f4b&quot;,&quot;user&quot;:&quot;osjaao&quot;,&quot;password&quot;:&quot;MTIzNDUyMjMz&quot;,&quot;rol_uuid&quot;:&quot;5a789486-fa9e-4bc5-b9bc-563944fa7d0b&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T16:58:25&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;c5fbae45-af44-4931-866f-e5dbcb54c49e&quot;,&quot;user&quot;:&quot;osjovana&quot;,&quot;password&quot;:&quot;MTIzNDU2NzhRMjM=&quot;,&quot;rol_uuid&quot;:&quot;1fead93e-e824-4c63-9eea-6e006a895daa&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T16:28:07&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;e0ee370a-e59d-4ca9-ae0c-d193b8f454bf&quot;,&quot;user&quot;:&quot;wglwzxox&quot;,&quot;password&quot;:&quot;YmozNWIveW9qaQ==&quot;,&quot;rol_uuid&quot;:&quot;44c7616e-ccfb-49ec-8317-069531b8eaca&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-05T01:16:33&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;9169b0b5-18f8-4178-b918-dae45698d3ef&quot;,&quot;user&quot;:&quot;wdgzxafl&quot;,&quot;password&quot;:&quot;OSl4ISNoL3luNQ==&quot;,&quot;rol_uuid&quot;:&quot;e1127fbb-0548-45fa-ad12-e0667d8d7efe&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T22:56:50&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;41c9e918-0fc2-4567-a0f1-8012232d3eb9&quot;,&quot;user&quot;:&quot;aoocfofz&quot;,&quot;password&quot;:&quot;eXQ3OzZuNDImaQ==&quot;,&quot;rol_uuid&quot;:&quot;eb54d4ca-df56-47a0-a201-30bada3b317f&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T22:36:36&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;092025f6-5758-4e4f-933e-46807b2f18a8&quot;,&quot;user&quot;:&quot;wzortifw&quot;,&quot;password&quot;:&quot;OXZlJTluN2lzLA==&quot;,&quot;rol_uuid&quot;:&quot;05797fa9-82af-49cf-8e5a-94b12dcf060c&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T16:58:12&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;e67151fb-cfbe-4352-a9b1-7138aa1ce47c&quot;,&quot;user&quot;:&quot;qazelkvn@gmail.com&quot;,&quot;password&quot;:&quot;aDMpcHhxLHo2KQ==&quot;,&quot;rol_uuid&quot;:&quot;64dd7b90-8c51-4a46-9268-9f465aa51c21&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T16:26:38&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;b806b06a-048c-4179-8f07-246840e5726c&quot;,&quot;user&quot;:&quot;s@gmail.comn@gmail.comv@gmail.comy@gmail.come@gmail.come@gmail.comj@gmail.comg@gmail.com&quot;,&quot;password&quot;:&quot;JThvYnQ7NCRyZg==&quot;,&quot;rol_uuid&quot;:&quot;728bb061-740e-4f22-b43b-901050203495&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T16:25:24&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;2f3e8b49-ce5c-4aa4-a146-c646643b0ade&quot;,&quot;user&quot;:&quot;ujrmewlo&quot;,&quot;password&quot;:&quot;OzI7ZWdsZ2YkLA==&quot;,&quot;rol_uuid&quot;:&quot;06a925b2-0c13-41af-832a-49f9fd29553c&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T16:22:42&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;88f071de-1bf8-4321-8bdf-f945cb301165&quot;,&quot;user&quot;:&quot;eesoxxth&quot;,&quot;password&quot;:&quot;c3RyaW5n&quot;,&quot;rol_uuid&quot;:&quot;10480142-18d3-4c16-8ad9-012afc67f3be&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T16:12:00&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;d8eb1968-976c-4ef3-b4f6-d1c6bb5a5dbf&quot;,&quot;user&quot;:&quot;Oscarjo&quot;,&quot;password&quot;:&quot;c3RyaW5n&quot;,&quot;rol_uuid&quot;:&quot;4b23eecd-f5d4-4ce9-aabf-4d8e99d2239a&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T16:10:26&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;4af6a1e4-78ff-4fdd-9020-a79fa9c04761&quot;,&quot;user&quot;:&quot;Oscar&quot;,&quot;password&quot;:&quot;T3NjYXIyMDAw&quot;,&quot;rol_uuid&quot;:&quot;934724a9-e88b-4749-9380-c47f769d0182&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-03-04T16:08:57&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;62c6caa3-ac58-4668-a519-6f32eb9cc8ca&quot;,&quot;user&quot;:&quot;pedro&quot;,&quot;password&quot;:&quot;ZGVmYXVsdA==&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-25T12:30:41&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;f2cd65c9-16ed-4397-ba9b-853b465e3166&quot;,&quot;user&quot;:&quot;student&quot;,&quot;password&quot;:&quot;c3R1ZGVudA==&quot;,&quot;rol_uuid&quot;:&quot;1fead93e-e824-4c63-9eea-6e006a895daa&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-25T10:44:15&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;84800f0d-6329-491b-b50f-7a1c7317df99&quot;,&quot;user&quot;:&quot;studen&quot;,&quot;password&quot;:&quot;c3R1ZGVu&quot;,&quot;rol_uuid&quot;:&quot;1fead93e-e824-4c63-9eea-6e006a895daa&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-25T10:44:03&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;677e386f-b7d5-454a-bfd0-09bfb62dae4e&quot;,&quot;user&quot;:&quot;ruben23&quot;,&quot;password&quot;:&quot;ZGVmYXVsdA==&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-23T23:55:16&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;3d2ed87d-b6bc-4b44-9950-1565f9008222&quot;,&quot;user&quot;:&quot;ruben&quot;,&quot;password&quot;:&quot;ZGVmYXVsdA==&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-23T23:25:26&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;7a0e72c9-d218-4a93-b395-e927b3e9339b&quot;,&quot;user&quot;:&quot;default&quot;,&quot;password&quot;:&quot;ZGVmYXVsdA==&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-23T23:10:52&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;73283ac5-5905-45ce-b90c-4a0ae0490a57&quot;,&quot;user&quot;:&quot;ruben3&quot;,&quot;password&quot;:&quot;cnViZW4xMjM=&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-23T23:04:30&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null},{&quot;uuid_user&quot;:&quot;a0ce19ba-1824-478e-800b-8d8ae78cc608&quot;,&quot;user&quot;:&quot;ruben1&quot;,&quot;password&quot;:&quot;cnViZW4xMjM=&quot;,&quot;rol_uuid&quot;:&quot;da6669bd-e15a-4d06-bc01-a4d0d227e738&quot;,&quot;is_active&quot;:true,&quot;created_at&quot;:&quot;2024-02-23T22:53:02&quot;,&quot;updated_at&quot;:null,&quot;last_connection&quot;:null}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
